@@ -48,7 +48,7 @@ body {
 	max-width: 1240px !important;
   	padding: 10px 20px 20px 20px !important;
 }
-@media (max-width: $mobile){
+@media (max-width: $mobile + 1px){
 	.row {
 		padding: 10px 0 20px 0 !important;
 	}
