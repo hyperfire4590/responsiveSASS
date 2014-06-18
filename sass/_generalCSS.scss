@@ -48,6 +48,11 @@ body {
 	max-width: 1240px !important;
   	padding: 10px 20px 20px 20px !important;
 }
+@media (max-width: $mobile){
+	.row {
+		padding: 10px 0 20px 0 !important;
+	}
+}
 .column, .columns {
 	@include marginPadding(0 !important, 5px !important);
 	@media only screen {
@@ -69,5 +74,4 @@ header {
 		color: $white;
 		image: none;
 	}
-
 }
