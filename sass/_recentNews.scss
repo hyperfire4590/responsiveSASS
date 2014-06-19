@@ -3,7 +3,7 @@
 	padding: 10px;
 	position: relative;
 	@media (max-width: $mobile + 1px){
-		height: 90px;
+		height: 150px;
 	}
 	h2 {
 		color: $grey-medium;
@@ -56,10 +56,10 @@
 		}
 		@media (max-width: 768px) {
 			font: {
-				size: 26px;
+				size: 40px;
 			}
 			line: {
-				height: 25px;
+				height: 35px;
 			}
 		}
 	}

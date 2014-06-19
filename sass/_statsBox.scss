@@ -5,7 +5,11 @@
 	height: 290px;
 	padding: 40px 10px 10px 10px;
 	@media (max-width: $mobile + 1px) {
-		height: 190px;
+		height: 200px;
+		padding: 10px;
+		text: {
+			align: center;
+		}
 	}
 }
 .statsBoxNumber {
@@ -20,6 +24,17 @@
 	text: {
 		align: center;
 	}
+	@media (max-width: $mobile + 1px) {
+		font: {
+			size: 90px;
+		}
+		line: {
+			height: 90px;
+		}
+		margin: {
+			bottom: 0px;
+		}
+	}
 }
 .statsBoxContent {
 	color: $taylor-purple;
@@ -32,6 +47,11 @@
 	}
 	text: {
 		transform: uppercase;
+	}
+	@media (max-width: $mobile + 1px) {
+		text: {
+			align: center;
+		}
 	}
 }
 .statsBoxClick {
