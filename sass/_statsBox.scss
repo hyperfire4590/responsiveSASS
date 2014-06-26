@@ -48,6 +48,22 @@
 	text: {
 		transform: uppercase;
 	}
+	@media (max-width: 1190px) {
+		font: {
+			size: 20px;
+		}
+		line: {
+			height: 20px;
+		}
+	}
+	@media (max-width: 1070px) {
+		font: {
+			size: 18px;
+		}
+		line: {
+			height: 18px;
+		}
+	}
 	@media (max-width: $mobile + 1px) {
 		text: {
 			align: center;
