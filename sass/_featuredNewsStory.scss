@@ -7,7 +7,7 @@
 		color: $white;
 		@include serifFontFamily;
 		font: {
-			size: 35px;
+			size: 32px;
 			style: italic;
 		}
 		line: {
@@ -16,9 +16,13 @@
 		text: {
 			transform: uppercase;
 		}
+		margin: {
+			top: 3px;
+			bottom: 3px;
+		}
 		@media (max-width: 1250px) {
 			font: {
-				size: 33px;
+				size: 30px;
 			}
 			line: {
 				height: 28px;
@@ -26,7 +30,7 @@
 		}
 		@media (max-width: 1190px) {
 			font: {
-				size: 31px;
+				size: 28px;
 			}
 			line: {
 				height: 26px;
@@ -34,7 +38,7 @@
 		}
 		@media (max-width: 1120px) {
 			font: {
-				size: 29px;
+				size: 26px;
 			}
 			line: {
 				height: 24px;
@@ -42,22 +46,108 @@
 		}
 		@media (max-width: 1070px) {
 			font: {
-				size: 27px;
+				size: 24px;
 			}
 			line: {
 				height: 22px;
 			}
 		}
-		/* @media (max-width: 786px) {
+		@media (max-width: 1024px) {
+			font: {
+				size: 30px;
+			}
+			line: {
+				height: 28px;
+			}
+		}
+		@media (max-width: 985px) {
+			font: {
+				size: 28px;
+			}
+			line: {
+				height: 26px;
+			}
+		}
+		@media (max-width: 920px) {
 			font: {
 				size: 26px;
 			}
+			line: {
+				height: 24px;
+			}
 		}
-		@media (max-width: 388px) {
+		@media (max-width: 865px) {
+			font: {
+				size: 24px;
+			}
+			line: {
+				height: 22px;
+			}
+		}
+		@media (max-width: 805px) {
+			font: {
+				size: 22px;
+			}
+			line: {
+				height: 20px;
+			}
+		}
+		@media (max-width: 745px) {
 			font: {
 				size: 20px;
 			}
-		} */
+			line: {
+				height: 18px;
+			}
+		}
+		@media (max-width: 680px) {
+			font: {
+				size: 18px;
+			}
+			line: {
+				height: 16px;
+			}
+		}
+		@media (max-width: 640px) {
+			font: {
+				size: 34px;
+			}
+			line: {
+				height: 32px;
+			}
+		}
+		@media (max-width: 540px) {
+			font: {
+				size: 30px;
+			}
+			line: {
+				height: 28px;
+			}
+		}
+		@media (max-width: 475px) {
+			font: {
+				size: 28px;
+			}
+			line: {
+				height: 26px;
+			}
+		}
+		@media (max-width: 435px) {
+			font: {
+				size: 24px;
+			}
+			line: {
+				height: 22px;
+			}
+		}
+		@media (max-width: 365px) {
+			font: {
+				size: 20px;
+			}
+			line: {
+				height: 18px;
+			}
+		}
 	}
 	img {
 		float: left;
