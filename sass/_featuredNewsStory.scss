@@ -151,6 +151,9 @@
 	}
 	img {
 		float: left;
+		@media (min-width: 641px) and (max-width: 1024px){
+			padding-right: 4px; /* responsive tablet images */
+		}
 	}
 	p {
 		margin: {
