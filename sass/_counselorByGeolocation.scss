@@ -1,14 +1,13 @@
 #counselorTile {
 	color: $white;
-	height: 152px;
 	strong {
 		font: {
 			weight: $fontBold;
 		}
 	}
-	@media (max-width: 1102px) {
+	/*@media (max-width: 1102px) {
 		height: 132px;
-	}
+	}*/
 	a {
 		&:hover {
 			/* was #FCC707 */

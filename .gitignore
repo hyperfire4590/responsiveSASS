@@ -1,2 +1,3 @@
 css/custom.css
-stylesheets/custom.css
+*.scss~
+*.scssc
