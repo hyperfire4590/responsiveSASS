@@ -1,0 +1,39 @@
+.captionOverlay{
+	opacity: 0;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	color: $white;
+	background: {
+		color: $black;
+	}
+	padding: 15px;
+	width: 100%;
+}
+#shareInstagram {
+	display: block;
+	position: relative;
+	width: 100%;
+	&:hover {
+		.captionOverlay {
+			opacity: 0.7;
+		}
+	}
+}
+.instagramImage {
+	img {
+		float: left;
+		@media (min-width: $mobileUp) and (max-width: $desktop){
+			width: 224px;
+		}
+		@media (min-width: $desktopUp){
+			width: 190px;
+		} 
+	}
+}
+
+#expandIcon a img {
+	@media (min-width: $desktopUp){
+		height: 50px;
+	}
+}

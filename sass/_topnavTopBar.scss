@@ -1,6 +1,6 @@
 /* TOP-NAV - Top-bar - mainNav and admButtons */
 /* Desktop */
-@media (min-width: $tablet + 1px) {	
+@media (min-width: $tabletUp) {	
 	.top-nav, .top-bar {
 		height: 35px;
 	}
@@ -11,7 +11,7 @@
   	}
 }
 .top-nav {
-	@media (max-width: $mobile + 1px) {
+	@media (max-width: $mobile) {
 		background: {
 			color: $taylor-purple !important;
 		}
@@ -75,7 +75,7 @@
 		}
 	}
 }
-@media (min-width: $mobile + 2px) {
+@media (min-width: $mobileUp) {
   .top-bar .toggle-topbar.menu-icon a::after {
     -webkit-box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black;
     box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black;
@@ -227,7 +227,7 @@
 				border: {
 					color: rgba(204, 204, 204, 0.5) transparent transparent transparent !important;
 				}
-				@media only screen and (min-width: $tablet + 1px) {
+				@media only screen and (min-width: $tabletUp) {
 					margin: {
 						top: 0px !important;
 					}
@@ -237,47 +237,4 @@
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

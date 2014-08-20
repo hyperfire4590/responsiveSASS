@@ -61,7 +61,7 @@
 	}
 }
 #textWrapper {
-	display: block;
+	display: table; /* Changed from "block" to allow for vertical-align text */
 	height: 100%;
 	width: 100%;
 }

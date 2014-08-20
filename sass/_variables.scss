@@ -25,11 +25,17 @@ $theme-near-black: #191001;
 
 
 // SCREEN SIZES
-$overallMaxWidth: 1240px;
-$tabletLandscape: 1070px;
-$tabletPortrait: 1024px;
-$tablet: 939px;
-$mobile: 639px;
+// Mobile First - 0px? - mobile menu/small tiles start
+$mobile: 640px; 				// low break - mobile menu/small tiles end
+$mobileUp: $mobile + 1px; 		// high break - tablet menu/medium tiles start
+$tablet: 939px; 				// low break - tablet menu ends
+$tabletUp: $tablet + 1px; 		// high break - full menu pt1 starts
+$desktop: 1024px; 				// low break - full menu pt1/medium tiles end
+$desktopUp: $desktop + 1px; 	// high break - full menu pt2/large tiles starts
+
+$overallMaxWidth: 1240px; 		// max-width main/tile space, ignores left/right border space
+$fullPage: 1320px; 				// low break - browser width: main/tile space is max-width 
+$fullPageUp: $fullPage + 1px;  	// high break - browser width: main/tile space above max-width
 
 
 //FONT WEIGHTS 
@@ -52,6 +58,10 @@ $fontNormal: 400;
 
 @mixin sanSerifFontFamily-nonBold {
     font-family: Helvetica, Arial, sans-serif;
+}
+
+@mixin sanSerifFontFamily-Light {
+    font-family: "Helvetica Light", Helvetica, Arial, sans-serif;
 }
 
 @mixin serifFontFamily {

@@ -1,163 +1,53 @@
+// FEATURED NEWS STORY
+
 .featureNews {
 	background: {
 		color: $grey-steel;
 	}
 	overflow: hidden;
+	@media (min-width: $mobileUp) {
+		height: 0;
+		padding: {
+			bottom: 100%;
+		}
+	}
 	h2 {
 		color: $white;
+		padding: 5px;
 		@include serifFontFamily;
 		font: {
-			size: 32px;
+			size: 6vw;
 			style: italic;
 		}
 		line: {
-			height: 30px;
+			height: 6vw;
 		}
 		text: {
 			transform: uppercase;
 		}
-		margin: {
-			top: 3px;
-			bottom: 3px;
-		}
-		@media (max-width: 1250px) {
+		@media (min-width: $mobileUp) {
 			font: {
-				size: 30px;
+				size: 2.8vw;
 			}
 			line: {
-				height: 28px;
+				height: 3vw;
 			}
 		}
-		@media (max-width: 1190px) {
+		@media (min-width: $fullPageUp) {
 			font: {
-				size: 28px;
+				size: 36px;
 			}
 			line: {
-				height: 26px;
-			}
-		}
-		@media (max-width: 1120px) {
-			font: {
-				size: 26px;
-			}
-			line: {
-				height: 24px;
-			}
-		}
-		@media (max-width: 1070px) {
-			font: {
-				size: 24px;
-			}
-			line: {
-				height: 22px;
-			}
-		}
-		@media (max-width: 1024px) {
-			font: {
-				size: 30px;
-			}
-			line: {
-				height: 28px;
-			}
-		}
-		@media (max-width: 985px) {
-			font: {
-				size: 28px;
-			}
-			line: {
-				height: 26px;
-			}
-		}
-		@media (max-width: 920px) {
-			font: {
-				size: 26px;
-			}
-			line: {
-				height: 24px;
-			}
-		}
-		@media (max-width: 865px) {
-			font: {
-				size: 24px;
-			}
-			line: {
-				height: 22px;
-			}
-		}
-		@media (max-width: 805px) {
-			font: {
-				size: 22px;
-			}
-			line: {
-				height: 20px;
-			}
-		}
-		@media (max-width: 745px) {
-			font: {
-				size: 20px;
-			}
-			line: {
-				height: 18px;
-			}
-		}
-		@media (max-width: 680px) {
-			font: {
-				size: 18px;
-			}
-			line: {
-				height: 16px;
-			}
-		}
-		@media (max-width: 640px) {
-			font: {
-				size: 34px;
-			}
-			line: {
-				height: 32px;
-			}
-		}
-		@media (max-width: 540px) {
-			font: {
-				size: 30px;
-			}
-			line: {
-				height: 28px;
-			}
-		}
-		@media (max-width: 475px) {
-			font: {
-				size: 28px;
-			}
-			line: {
-				height: 26px;
-			}
-		}
-		@media (max-width: 435px) {
-			font: {
-				size: 24px;
-			}
-			line: {
-				height: 22px;
-			}
-		}
-		@media (max-width: 365px) {
-			font: {
-				size: 20px;
-			}
-			line: {
-				height: 18px;
+				height: 38px;
 			}
 		}
 	}
 	img {
-		float: left;
-		@media (min-width: 641px) and (max-width: 1024px){
-			padding-right: 4px; /* responsive tablet images */
-		}
+		padding: 5px;
 	}
-	p {
-		margin: {
-			bottom: 0px;
+	.imgHolder {
+		text: {
+			align: center;
 		}
 	}
 }

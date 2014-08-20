@@ -1,0 +1,82 @@
+// TODAY DATE
+
+.todayDate {
+	background: {
+		color: $grey-very-light;
+	}
+	text: {
+		align: center;
+	}
+	height: 0; 
+	padding: {
+		bottom: 30%;
+	}
+	@media (min-width: $mobileUp){
+		padding: {
+			bottom: 100%;
+		}
+	}
+}
+.todayDate .dateMonth {
+	@include sanSerifFontFamily-nonBold;
+	color: $taylor-blue;
+	margin: {
+		top: 0;
+	}
+	padding: {
+		top: 5px;
+	}
+	font: {
+		size: 5vw;
+	}
+	line: {
+		height: 6vw;
+	}
+	@media (min-width: $mobileUp){
+		font: {
+			size: 2vw;
+		}
+		line: {
+			height: 2vw;
+		}
+		padding: {
+			top: 15px;
+		}
+	}
+	@media (min-width: $fullPageUp){
+		font: {
+			size: 26px;
+		}
+		line: {
+			height: 24px;
+		}
+	}
+}
+.todayDate .dateNum {
+	@include sanSerifFontFamily-Light;
+	color: $grey-dark;
+	padding: 0px;
+	margin: 0px;
+	font: {
+		size: 15vw;
+	}
+	line: {
+		height: 15vw;
+	}
+	@media (min-width: $mobileUp){
+		font: {
+			size: 9.4vw;
+		}
+		line: {
+			height: 9vw;
+		}
+	}
+	@media (min-width: $fullPageUp){
+		font: {
+			size: 120px;
+		}
+		line: {
+			height: 120px;
+		}
+	}
+}

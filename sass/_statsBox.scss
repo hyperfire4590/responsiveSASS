@@ -1,78 +1,94 @@
 .statsBox {
 	background: {
-		color: $yellow; /* was #fcc707 */
+		color: $yellow; 
 	}
-	height: 390px;
-	padding: 40px 10px 10px 10px;
-	@media (max-width: $mobile + 1px) {
-		height: 200px;
-		padding: 10px;
+	@media (max-width: $mobile) {
 		text: {
 			align: center;
+		}
+	}
+	height: 0; 
+	padding: {
+		bottom: 35%;
+	}
+	@media (min-width: $mobileUp){
+		padding: {
+			bottom: 205%;
 		}
 	}
 }
 .statsBoxNumber {
 	color: $taylor-purple;
-	font: {
-		size: 50px;
-		weight: $fontBold;
+	padding: {
+		top: 2vw;
+		bottom: 2vw;
 	}
-	margin: {
-		bottom: 30px;
-	}
+	margin: 0;
 	text: {
 		align: center;
 	}
-	@media (max-width: $mobile + 1px) {
+	font: {
+		size: 15vw;
+		weight: $fontBold;
+	}
+	line: {
+		height: 15vw;
+	}
+	@media (min-width: $mobileUp){
 		font: {
-			size: 90px;
+			size: 5vw;
 		}
 		line: {
-			height: 90px;
+			height: 5.2vw;
 		}
-		margin: {
-			bottom: 0px;
+		padding: {
+			top: 25px;
+			bottom: 25px;
+		}
+	}
+	@media (min-width: $fullPageUp){
+		font: {
+			size: 66px;
+		}
+		line: {
+			height: 68px;
 		}
 	}
 }
 .statsBoxContent {
 	color: $taylor-purple;
-	font: {
-		size: 22px;
-		weight: $fontBold;
-	}
-	line: {
-		height: 22px;
-	}
+	padding: 1.4vw;
+	margin: 0;
 	text: {
 		transform: uppercase;
 	}
-	@media (max-width: 1190px) {
-		font: {
-			size: 20px;
-		}
-		line: {
-			height: 20px;
-		}
+	font: {
+		weight: $fontBold;
+		size: 4.3vw;
 	}
-	@media (max-width: 1070px) {
-		font: {
-			size: 18px;
-		}
-		line: {
-			height: 18px;
-		}
+	line: {
+		height: 4.4vw;
 	}
-	@media (max-width: $mobile + 1px) {
+	@media (max-width: $mobile) {
 		text: {
 			align: center;
 		}
 	}
-}
-.statsBoxClick {
-	color: $black;
-	font: {
-		size: 15px;
+	@media (min-width: $mobileUp){
+		font: {
+			size: 1.8vw;
+		}
+		line: {
+			height: 1.8vw;
+		}
+		padding: 5px 10px;
+	}
+	@media (min-width: $fullPageUp){
+		font: {
+			size: 22px;
+		}
+		line: {
+			height: 22px;
+		}
 	}
 }

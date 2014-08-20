@@ -1,0 +1,61 @@
+.featureDept {
+	background: {
+		color: $taylor-blue;
+	}
+	@media (min-width: $mobileUp) {
+		height: 0;
+		padding: {
+			bottom: 48.8%;
+		}
+	}
+}
+.featureDept .rightHalf, .featureDept .leftHalf {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.featureDept .rightHalf {
+	right: 0;
+	left: 43%;
+	@media (min-width: $mobileUp){
+		left: 50%;
+	}
+	a {
+		display: table;
+		height: 100%;
+		width: 100%;
+		h2 {
+			display: table-cell;
+			vertical {
+				align: middle;
+			}
+			color: $white;
+			font: {
+				@include sanSerifFontFamily-bold;
+				size: 28px;
+			}
+			line: {
+				height: 30px;
+			}
+			text: {
+				transform: uppercase;
+			}
+			margin: 0;
+		}
+	}
+}
+.featureDept .leftHalf {
+	right: 57%;
+	left: 0;
+	@media (min-width: $mobileUp){
+		right: 50%;
+	}
+	img {
+		padding: 5px;
+		border: {
+			right: 2px solid white;
+		}
+	}
+}
+
+
