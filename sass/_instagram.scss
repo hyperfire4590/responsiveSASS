@@ -21,7 +21,7 @@
 	}
 }
 .instagramImage {
-	img {
+	.mainImg {
 		float: left;
 		@media (min-width: $mobileUp) and (max-width: $desktop){
 			width: 224px;

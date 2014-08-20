@@ -850,18 +850,18 @@ input#interestSubmit {
 }
 
 /* line 24, ../sass/_instagram.scss */
-.instagramImage img {
+.instagramImage .mainImg {
   float: left;
 }
 @media (min-width: 641px) and (max-width: 1024px) {
   /* line 24, ../sass/_instagram.scss */
-  .instagramImage img {
+  .instagramImage .mainImg {
     width: 224px;
   }
 }
 @media (min-width: 1025px) {
   /* line 24, ../sass/_instagram.scss */
-  .instagramImage img {
+  .instagramImage .mainImg {
     width: 190px;
   }
 }
