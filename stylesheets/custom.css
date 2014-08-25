@@ -145,6 +145,7 @@ header {
 }
 
 @media (max-width: 939px) {
+  /* Item visible with mobile menu only */
   /* line 8, ../sass/_header.scss */
   .showTopMenuItem {
     display: inherit;
@@ -295,7 +296,7 @@ header {
     padding-top: 0px !important;
   }
 }
-@media (max-width: 641px) {
+@media (max-width: 640px) {
   /* line 13, ../sass/_topnavTopBar.scss */
   .top-nav {
     background-color: #5a3358 !important;
@@ -355,7 +356,7 @@ header {
   }
 }
 
-@media (min-width: 642px) {
+@media (min-width: 641px) {
   /* line 79, ../sass/_topnavTopBar.scss */
   .top-bar .toggle-topbar.menu-icon a::after {
     -webkit-box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black;
@@ -483,6 +484,125 @@ header {
   }
 }
 
+/* Mobile Menu Tab-Bar */
+/* Classes to show/hide header bars around 940px breakpoint for off-canvas */
+@media (max-width: 940px) {
+  /* line 5, ../sass/_mobileMenuTabBar.scss */
+  .show-for-mobile-menu {
+    display: inherit !important;
+  }
+
+  /* line 8, ../sass/_mobileMenuTabBar.scss */
+  .hide-for-mobile-menu {
+    display: none !important;
+  }
+}
+@media (min-width: 941px) {
+  /* line 13, ../sass/_mobileMenuTabBar.scss */
+  .show-for-mobile-menu {
+    display: none !important;
+  }
+
+  /* line 16, ../sass/_mobileMenuTabBar.scss */
+  .hide-for-mobile-menu {
+    display: inherit !important;
+  }
+}
+/* Classes to style mobile/tablet header for off-canvas */
+@media (max-width: 940px) {
+  /* line 23, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar {
+    background-color: #5a3358;
+  }
+
+  /* line 26, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar .left-small {
+    border-right: none;
+  }
+  /* line 28, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar .left-small .left-off-canvas-toggle span {
+    box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white;
+  }
+
+  /* line 32, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar .middle.tab-bar-section {
+    overflow: hidden;
+  }
+
+  /* line 35, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar .title-area {
+    text-align: center;
+    margin-left: 0;
+  }
+  /* line 38, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar .title-area .name {
+    width: 120px;
+    margin: auto;
+  }
+  /* line 41, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar .title-area .name img {
+    padding: 0;
+    margin: 0;
+  }
+}
+/* Classes to add admButtons for mobile/tablet menu */
+/* line 51, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons li {
+  float: left;
+  text-align: center;
+  margin-left: 0;
+}
+/* line 55, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons li a {
+  color: white;
+  font-family: Helvetica Bold Oblique, Helvetica Bold, Helvetica, Arial, sans-serif;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+}
+/* line 63, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons .infoButton {
+  width: 34%;
+}
+/* line 65, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons .infoButton a {
+  background-color: #7d999b;
+}
+@media (max-width: 379px) {
+  /* line 63, ../sass/_mobileMenuTabBar.scss */
+  .show-for-mobile-menu .admButtons .infoButton {
+    width: 100%;
+  }
+}
+/* line 72, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons .visitButton {
+  width: 33%;
+}
+/* line 74, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons .visitButton a {
+  background-color: #007476;
+}
+@media (max-width: 379px) {
+  /* line 72, ../sass/_mobileMenuTabBar.scss */
+  .show-for-mobile-menu .admButtons .visitButton {
+    width: 50%;
+  }
+}
+/* line 81, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons .applyButton {
+  width: 33%;
+}
+/* line 83, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons .applyButton a {
+  background-color: #f47920;
+}
+@media (max-width: 379px) {
+  /* line 81, ../sass/_mobileMenuTabBar.scss */
+  .show-for-mobile-menu .admButtons .applyButton {
+    width: 50%;
+  }
+}
+
 /****  FOOTER CHANGES ****/
 /* line 2, ../sass/_footer.scss */
 .footer-social {
@@ -494,7 +614,7 @@ header {
 .social-button {
   text-align: center;
 }
-@media (min-width: 941px) and (max-width: 1024px) {
+@media (min-width: 940px) and (max-width: 1024px) {
   /* line 8, ../sass/_footer.scss */
   .social-button {
     text-align: right;

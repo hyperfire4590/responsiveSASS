@@ -26,9 +26,9 @@ body {
 }
 #main {
 	background: $white;
-	@include css3(box-shadow, 0 0 5px rgba(0, 0, 0, 0.5));
+	/*@include css3((-webkit-, -khtml-, -moz-, -ms-, -o-, ''), box-shadow, 0 0 5px rgba(0, 0, 0, 0.5));*/
 	margin: 0 auto;
-	max-width: $overallMaxWidth - 20px;
+	max-width: $overallMaxWidth;
 	padding: 0 0 20px 0;
 }
 h1 {

@@ -4,7 +4,7 @@
 .showTopMenuItem {
   display: none;
 }
-@media (max-width: $tablet) {
+@media (max-width: $tablet) { /* Item visible with mobile menu only */
   .showTopMenuItem {
   display: inherit;
   }
@@ -29,3 +29,4 @@
 @import "toptoolbarRow1";
 @import "toptoolbarRow2";
 @import "topnavTopBar";
+@import "mobileMenuTabBar";

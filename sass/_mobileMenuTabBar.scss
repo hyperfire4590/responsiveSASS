@@ -1,0 +1,90 @@
+/* Mobile Menu Tab-Bar */
+
+/* Classes to show/hide header bars around 940px breakpoint for off-canvas */
+@media (max-width: 940px){
+	.show-for-mobile-menu {
+		display: inherit !important;
+	}
+	.hide-for-mobile-menu {
+		display: none !important;
+	}
+}
+@media (min-width: 941px){
+	.show-for-mobile-menu {
+		display: none !important;
+	}
+	.hide-for-mobile-menu {
+		display: inherit !important;
+	}
+}
+
+/* Classes to style mobile/tablet header for off-canvas */
+@media (max-width: 940px){
+	.tab-bar {
+		background-color: #5a3358;
+	}
+	.tab-bar .left-small {
+		border-right: none;
+		.left-off-canvas-toggle span {
+			box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white;
+		}
+	}
+	.tab-bar .middle.tab-bar-section {
+		overflow: hidden;
+	}
+	.tab-bar .title-area {
+		text-align: center;
+		margin-left: 0;
+		.name {
+			width: 120px;
+			margin: auto;
+			img {
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+}
+
+/* Classes to add admButtons for mobile/tablet menu */
+.show-for-mobile-menu .admButtons {
+	li {
+		float: left;
+		text-align: center;
+		margin-left: 0;
+		a {
+			color: white;
+			font-family: Helvetica Bold Oblique, Helvetica Bold, Helvetica, Arial, sans-serif;
+			display: block;
+			width: 100%;
+			text-transform: uppercase; 
+		}
+	}
+	.infoButton {
+		width: 34%;
+		a {
+			background-color: #7d999b;
+		}
+		@media (max-width: 379px) {
+			width: 100%;
+		}
+	}
+	.visitButton {
+		width: 33%;
+		a {
+			background-color: #007476;
+		}
+		@media (max-width: 379px) {
+			width: 50%;
+		}
+	}
+	.applyButton {
+		width: 33%;
+		a {
+			background-color: #f47920;
+		}
+		@media (max-width: 379px) {
+			width: 50%;
+		}
+	}
+}
