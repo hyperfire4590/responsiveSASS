@@ -65,26 +65,17 @@
 		a {
 			background-color: #7d999b;
 		}
-		@media (max-width: 379px) {
-			width: 100%;
-		}
 	}
 	.visitButton {
 		width: 33%;
 		a {
 			background-color: #007476;
 		}
-		@media (max-width: 379px) {
-			width: 50%;
-		}
 	}
 	.applyButton {
 		width: 33%;
 		a {
 			background-color: #f47920;
-		}
-		@media (max-width: 379px) {
-			width: 50%;
 		}
 	}
 }

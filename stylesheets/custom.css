@@ -568,39 +568,21 @@ header {
 .show-for-mobile-menu .admButtons .infoButton a {
   background-color: #7d999b;
 }
-@media (max-width: 379px) {
-  /* line 63, ../sass/_mobileMenuTabBar.scss */
-  .show-for-mobile-menu .admButtons .infoButton {
-    width: 100%;
-  }
-}
-/* line 72, ../sass/_mobileMenuTabBar.scss */
+/* line 69, ../sass/_mobileMenuTabBar.scss */
 .show-for-mobile-menu .admButtons .visitButton {
   width: 33%;
 }
-/* line 74, ../sass/_mobileMenuTabBar.scss */
+/* line 71, ../sass/_mobileMenuTabBar.scss */
 .show-for-mobile-menu .admButtons .visitButton a {
   background-color: #007476;
 }
-@media (max-width: 379px) {
-  /* line 72, ../sass/_mobileMenuTabBar.scss */
-  .show-for-mobile-menu .admButtons .visitButton {
-    width: 50%;
-  }
-}
-/* line 81, ../sass/_mobileMenuTabBar.scss */
+/* line 75, ../sass/_mobileMenuTabBar.scss */
 .show-for-mobile-menu .admButtons .applyButton {
   width: 33%;
 }
-/* line 83, ../sass/_mobileMenuTabBar.scss */
+/* line 77, ../sass/_mobileMenuTabBar.scss */
 .show-for-mobile-menu .admButtons .applyButton a {
   background-color: #f47920;
-}
-@media (max-width: 379px) {
-  /* line 81, ../sass/_mobileMenuTabBar.scss */
-  .show-for-mobile-menu .admButtons .applyButton {
-    width: 50%;
-  }
 }
 
 /****  FOOTER CHANGES ****/
