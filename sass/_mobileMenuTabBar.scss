@@ -1,7 +1,7 @@
 /* Mobile Menu Tab-Bar */
 
 /* Classes to show/hide header bars around 940px breakpoint for off-canvas */
-@media (max-width: 940px){
+@media (max-width: $tablet){
 	.show-for-mobile-menu {
 		display: inherit !important;
 	}
@@ -9,7 +9,7 @@
 		display: none !important;
 	}
 }
-@media (min-width: 941px){
+@media (min-width: $tabletUp){
 	.show-for-mobile-menu {
 		display: none !important;
 	}
@@ -19,9 +19,9 @@
 }
 
 /* Classes to style mobile/tablet header for off-canvas */
-@media (max-width: 940px){
+@media (max-width: $tablet){
 	.tab-bar {
-		background-color: #5a3358;
+		background-color: $taylor-purple;
 	}
 	.tab-bar .left-small {
 		border-right: none;
@@ -53,7 +53,7 @@
 		text-align: center;
 		margin-left: 0;
 		a {
-			color: white;
+			color: $white;
 			font-family: Helvetica Bold Oblique, Helvetica Bold, Helvetica, Arial, sans-serif;
 			display: block;
 			width: 100%;
@@ -63,19 +63,19 @@
 	.infoButton {
 		width: 34%;
 		a {
-			background-color: #7d999b;
+			background-color: $taylor-slate;
 		}
 	}
 	.visitButton {
 		width: 33%;
 		a {
-			background-color: #007476;
+			background-color: $taylor-drk-grn;
 		}
 	}
 	.applyButton {
 		width: 33%;
 		a {
-			background-color: #f47920;
+			background-color: $orange;
 		}
 	}
 }
