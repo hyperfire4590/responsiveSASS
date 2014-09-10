@@ -2,8 +2,13 @@
 	color: $yellow;
 	@include sanSerifFontFamily-nonBold;
 	font: {
-		size: 12px;
+		size: 0.9vw;
 		weight: $fontBold;
+	}
+	@media (min-width: $fullPageUp){
+		font: {
+			size: 12px;
+		}
 	}
 	padding: 10px 5px 5px 0;
 	text: {
