@@ -2,16 +2,16 @@
 .readMore {
   color: #ffcb05;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 0.9vw;
+  font-size: 12px;
   font-weight: 700;
   padding: 10px 5px 5px 0;
   text-align: right;
   text-transform: uppercase;
 }
-@media (min-width: 1321px) {
+@media (min-width: 641px) and (max-width: 1320px) {
   /* line 1, ../sass/_generalWidgets.scss */
   .readMore {
-    font-size: 12px;
+    font-size: 0.9vw;
   }
 }
 /* line 18, ../sass/_generalWidgets.scss */
@@ -652,7 +652,7 @@ input#interestSubmit {
 .statsBox {
   background-color: #ffcb05;
   height: 0;
-  padding-bottom: 35%;
+  padding-bottom: 40%;
 }
 @media (max-width: 640px) {
   /* line 1, ../sass/_statsBox.scss */
@@ -683,8 +683,8 @@ input#interestSubmit {
   .statsBoxNumber {
     font-size: 5vw;
     line-height: 5.2vw;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
   }
 }
 @media (min-width: 1321px) {
@@ -692,10 +692,12 @@ input#interestSubmit {
   .statsBoxNumber {
     font-size: 66px;
     line-height: 68px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
-/* line 58, ../sass/_statsBox.scss */
+/* line 62, ../sass/_statsBox.scss */
 .statsBoxContent {
   color: #5a3358;
   padding: 1.4vw;
@@ -706,21 +708,21 @@ input#interestSubmit {
   line-height: 4.4vw;
 }
 @media (max-width: 640px) {
-  /* line 58, ../sass/_statsBox.scss */
+  /* line 62, ../sass/_statsBox.scss */
   .statsBoxContent {
     text-align: center;
   }
 }
 @media (min-width: 641px) {
-  /* line 58, ../sass/_statsBox.scss */
+  /* line 62, ../sass/_statsBox.scss */
   .statsBoxContent {
-    font-size: 1.8vw;
-    line-height: 1.8vw;
+    font-size: 1.7vw;
+    line-height: 1.7vw;
     padding: 5px 10px;
   }
 }
 @media (min-width: 1321px) {
-  /* line 58, ../sass/_statsBox.scss */
+  /* line 62, ../sass/_statsBox.scss */
   .statsBoxContent {
     font-size: 24px;
     line-height: 23px;
@@ -881,13 +883,6 @@ input#interestSubmit {
   /* line 24, ../sass/_instagram.scss */
   .instagramImage .mainImg {
     width: 190px;
-  }
-}
-
-@media (min-width: 1025px) {
-  /* line 35, ../sass/_instagram.scss */
-  #expandIcon a img {
-    height: 50px;
   }
 }
 

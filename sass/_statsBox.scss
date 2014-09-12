@@ -9,7 +9,7 @@
 	}
 	height: 0; 
 	padding: {
-		bottom: 35%;
+		bottom: 40%;
 	}
 	@media (min-width: $mobileUp){
 		padding: {
@@ -42,8 +42,8 @@
 			height: 5.2vw;
 		}
 		padding: {
-			top: 25px;
-			bottom: 25px;
+			top: 2vw;
+			bottom: 2vw;
 		}
 	}
 	@media (min-width: $fullPageUp){
@@ -52,6 +52,10 @@
 		}
 		line: {
 			height: 68px;
+		}
+		padding: {
+			top: 25px;
+			bottom: 25px;
 		}
 	}
 }
@@ -76,10 +80,10 @@
 	}
 	@media (min-width: $mobileUp){
 		font: {
-			size: 1.8vw;
+			size: 1.7vw;
 		}
 		line: {
-			height: 1.8vw;
+			height: 1.7vw;
 		}
 		padding: 5px 10px;
 	}
