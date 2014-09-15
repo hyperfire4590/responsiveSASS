@@ -54,7 +54,7 @@
 		margin-left: 0;
 		a {
 			color: $white;
-			font-family: Helvetica Bold Oblique, Helvetica Bold, Helvetica, Arial, sans-serif;
+			@include sanSerifFontFamily;
 			display: block;
 			width: 100%;
 			text-transform: uppercase; 
@@ -76,6 +76,29 @@
 		width: 33%;
 		a {
 			background-color: $orange;
+		}
+	}
+}
+
+/* Classes to style mobile/tablet menu navigation buttons */
+ul.off-canvas-list {
+	li {
+		a {
+			@include serifFontFamily;
+			font-size: 20px;
+			font-style: italic;
+			line-height: 22px;
+			text-transform: uppercase;
+		}
+		label {
+			text-shadow: none;
+			@include serifFontFamily;
+		}
+		ul {
+			#filters li a {
+				font-size: 16px;
+				line-height: 18px;
+			}
 		}
 	}
 }

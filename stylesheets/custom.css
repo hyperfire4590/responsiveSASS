@@ -555,7 +555,7 @@ header {
 /* line 55, ../sass/_mobileMenuTabBar.scss */
 .show-for-mobile-menu .admButtons li a {
   color: white;
-  font-family: Helvetica Bold Oblique, Helvetica Bold, Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif;
   display: block;
   width: 100%;
   text-transform: uppercase;
@@ -583,6 +583,26 @@ header {
 /* line 77, ../sass/_mobileMenuTabBar.scss */
 .show-for-mobile-menu .admButtons .applyButton a {
   background-color: #f47920;
+}
+
+/* Classes to style mobile/tablet menu navigation buttons */
+/* line 86, ../sass/_mobileMenuTabBar.scss */
+ul.off-canvas-list li a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+/* line 93, ../sass/_mobileMenuTabBar.scss */
+ul.off-canvas-list li label {
+  text-shadow: none;
+  font-family: "Times New Roman", Times, serif;
+}
+/* line 98, ../sass/_mobileMenuTabBar.scss */
+ul.off-canvas-list li ul #filters li a {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 /****  FOOTER CHANGES ****/
@@ -655,9 +675,10 @@ header {
   color: #666666;
   font-family: "Helvetica Oblique", Helvetica, Arial, sans-serif;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 14px;
+  margin-bottom: 5px;
 }
-/* line 79, ../sass/_footer.scss */
+/* line 82, ../sass/_footer.scss */
 .footer-links h2 {
   border-bottom: none;
   color: white;
@@ -671,37 +692,37 @@ header {
   text-shadow: none;
   text-transform: uppercase;
 }
-/* line 99, ../sass/_footer.scss */
+/* line 102, ../sass/_footer.scss */
 .footer-links .heading-one {
   background-color: #5a3358;
 }
-/* line 104, ../sass/_footer.scss */
+/* line 107, ../sass/_footer.scss */
 .footer-links .special-one {
   color: #5a3358;
 }
-/* line 108, ../sass/_footer.scss */
+/* line 111, ../sass/_footer.scss */
 .footer-links .heading-two {
   background-color: #00adef;
 }
-/* line 113, ../sass/_footer.scss */
+/* line 116, ../sass/_footer.scss */
 .footer-links .special-two {
   color: #00adef;
 }
-/* line 117, ../sass/_footer.scss */
+/* line 120, ../sass/_footer.scss */
 .footer-links .heading-three {
   background-color: #f47920;
 }
-/* line 122, ../sass/_footer.scss */
+/* line 125, ../sass/_footer.scss */
 .footer-links .special-three {
   color: #f47920;
 }
 
-/* line 127, ../sass/_footer.scss */
+/* line 130, ../sass/_footer.scss */
 .special-one, .special-two, .special-three {
   font-weight: 700;
 }
 
-/* line 132, ../sass/_footer.scss */
+/* line 135, ../sass/_footer.scss */
 .footer-nav {
   background-color: #f2f2f2 !important;
 }
