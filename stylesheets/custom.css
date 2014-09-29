@@ -604,6 +604,10 @@ ul.off-canvas-list li ul #filters li a {
   font-size: 16px;
   line-height: 18px;
 }
+/* line 104, ../sass/_mobileMenuTabBar.scss */
+ul.off-canvas-list li.has-submenu > a:after {
+  float: right;
+}
 
 /****  FOOTER CHANGES ****/
 /* line 2, ../sass/_footer.scss */

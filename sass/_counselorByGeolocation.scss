@@ -1,130 +1,117 @@
-#counselorTile {
+#counselorTile{
 	color: $white;
+	background-color: #191919;
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 50%;
+	@media (min-width: $mobileUp) {
+		padding-bottom: 100%;
+	}
 	strong {
 		font: {
 			weight: $fontBold;
 		}
 	}
-	/*@media (max-width: 1102px) {
-		height: 132px;
-	}*/
-	a {
-		&:hover {
-			/* was #FCC707 */
-			color: $orange;
-			opacity: 1;
+	.imgHolder {
+		text-align: center;
+		img {
+			padding: 5px;
 		}
 	}
-	p {
-		margin: {
-			bottom: 0;
+	.counselorTextbox {
+		@media (min-width: $mobileUp) {
+			height: 14vw;
 		}
 	}
-}
-#geoNotSupported, #geoError {
-	img {
-		margin: {
-		top: 10px;
-		}
-	}
-	p {
-		margin: {
-			top: 10px;
-		}
-		position: absolute;
-		bottom: 10px;
-	}
-}
-#geoNoCounselor {
-	margin: {
-		top: 10px;
-	}
-	#leftSide {
-		float: left;
-		margin: {
-			right: 10px;
-		}
-	}
-	#rightside {
-		margin: {
-			top: 30px;
-		}
-	}
-	#searchLink	{
-		float: left;
-		margin: {
-			top: 20px;
-		}
-	}
-}
-#counselor {
-	margin: {
-		top: 10px;
-	}
-	@media (max-width: 1102px) {
-		margin: {
-			top: 5px;
-		}
-	}
-	#leftSide {
-		float: left;
-		height: 135px;
-		margin: {
-			right: 10px;
-		}
-		@media (max-width: 1102px) {
-			width: 30%;
-		}
+	h2{
 		@media (max-width: $mobile) {
-			height: 125px;
-			width: 40%;
-		}
-	}
-	#rightside {
-		float: left;
-		height: 135px;
-		margin: {
-			top: 0;
-		}
-		position: relative;
-		width: 60%;
-		@media (max-width: 1102px) {
-			margin: {
-				top: 0;
-			}
-		}
-		@media (max-width: $mobile) {
-			height: 125px;
-			width: 50%;
-		}
-		@media (max-width: 1005px) {
-			height: 120px;
-		}
-		@media (max-width: $tablet) {
-			height: 110px;
-		}
-		#moreLink {
 			position: absolute;
-			bottom: 0;
-			@media (max-width: 1102px) {
-				display: none;
-			}
-			@media (max-width: $tablet) {
-				display: none;
-			}
+			top: -200px;
+			width:100%;
+			height: 50px;
+			padding-top: 20px;
+			background-color: rgba(25,25,25,0.4);
+			pointer-events: none;
+			font-size: 4vw; 
+			line-height: 3.9vw;
 		}
-		p {
-			&#contactInfo {
-				margin: {
-					top: 10px;
-				}
-			}
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		color: #fff;
+		text-align: center;
+		@media (min-width: $mobileUp) {
+			margin-top: 5px;
+			margin-bottom: 0px;
+			font-size: 2vw; 
+			line-height: 1.9vw;
 		}
+	}
+	p {
+		margin-bottom: 0;
+	}
+	#counselorName {
+		color: #00adef;
+		margin-top: 5px;
+		margin-bottom: 2px;
+		font-size: 3.3vw;
+		font-weight: bold;
+		text-align: center;
+		position: relative;
+		@media (min-width: $mobileUp) {
+			font-size: 1.6vw;
+		}
+		@media(max-width: 515px){
+			display: none; /* hidden at smallest size */
+		}
+	}
+	
+	.readMore {
+		position: absolute;
 		a {
-			#state {
-				color: $yellow;
-			}
+			color: $yellow;
+		}
+		@media(max-width: 515px){
+			bottom: auto;
+			top: -600%;
+			left: 48%;
+		}
+		@media(min-width: 516px){
+			bottom: -50%;
+			right: 0;
+			width: auto;
+		}
+		@media(min-width: $mobileUp){
+			bottom: auto;
+			right: auto;
+			width: 100%;
+			text-align: center;
+		}
+		@media (min-width: $mobileUp) and (max-width: 975px) {
+			font-size: 1.1vw;
+			line-height: 1.2vw;
+			padding-top: 5px;
+		}
+		@media (min-width: 975px) {
+			right: 0;
+			width: auto;
+			bottom: 0;
+			padding-bottom: 0px;
+		}
+	}
+	
+	p#location{
+		position: absolute;
+		@media(max-width: 515px){
+			top: -450%;
+			width: 100%;
+			background-color: rgba(25,25,25,0.4);
+			padding-left: 13%;
+		}
+		@media(min-width: 516px){
+			bottom: -45%;
+		}
+		@media (min-width: $mobileUp) {
+			bottom: 0;
 		}
 	}
 }
-

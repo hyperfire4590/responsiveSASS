@@ -31,3 +31,18 @@
 		} 
 	}
 }
+
+/* Fix for colorbox caption and close button used on Instagram widget */
+
+/*Overwrite theme.css around line 625*/
+#colorbox {
+	button {
+		padding: 6px 10px;
+	}
+}
+/*Prevent caption and close button overlap*/
+#cboxTitle {
+	padding: {
+		right: 25px;
+	}
+}

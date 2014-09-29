@@ -101,4 +101,8 @@ ul.off-canvas-list {
 			}
 		}
 	}
+	li.has-submenu > a:after {
+		float: right;
+	}
 }
+
