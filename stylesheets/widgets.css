@@ -813,18 +813,17 @@ input#interestSubmit {
 .statsBox {
   background-color: #ffcb05;
   height: 0;
-  padding-bottom: 40%;
+  /*@media (min-width: $mobileUp){
+  	padding: {
+  		bottom: 205%;
+  	}
+  }*/
 }
 @media (max-width: 640px) {
   /* line 1, ../sass/_statsBox.scss */
   .statsBox {
     text-align: center;
-  }
-}
-@media (min-width: 641px) {
-  /* line 1, ../sass/_statsBox.scss */
-  .statsBox {
-    padding-bottom: 205%;
+    padding-bottom: 40%;
   }
 }
 
