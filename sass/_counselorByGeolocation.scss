@@ -19,31 +19,45 @@
 		}
 	}
 	.counselorTextbox {
+		height: 10vw;
 		@media (min-width: $mobileUp) {
-			height: 14vw;
+			height: 13vw;
+		}
+		@media (min-width: $fullPageUp) {
+			height: 190px;
 		}
 	}
 	h2{
-		@media (max-width: $mobile) {
-			position: absolute;
-			top: -200px;
-			width:100%;
-			height: 50px;
-			padding-top: 20px;
-			background-color: rgba(25,25,25,0.4);
-			pointer-events: none;
-			font-size: 4vw; 
-			line-height: 3.9vw;
-		}
 		font-family: Helvetica, Arial, sans-serif;
 		font-weight: bold;
 		color: #fff;
 		text-align: center;
+		position: absolute;
+		@media (max-width: 399px) {
+			top: -48vw;
+		}
+		@media (min-width: 400px) {
+			top: -200px;
+		}
+		@media (max-width: $mobile) { 
+			width:100%;
+			padding-top: 20px;
+			background-color: rgba(25,25,25,0.4);
+			pointer-events: none;
+			font-size: 4vw; 
+			line-height: 4.5vw;
+		}
 		@media (min-width: $mobileUp) {
+			top: auto;
+			position: relative;
 			margin-top: 5px;
 			margin-bottom: 0px;
 			font-size: 2vw; 
 			line-height: 1.9vw;
+		}
+		@media (min-width: $fullPageUp) {
+			font-size: 26px;
+			line-height: 25px;
 		}
 	}
 	p {
@@ -57,26 +71,43 @@
 		font-weight: bold;
 		text-align: center;
 		position: relative;
-		@media (min-width: $mobileUp) {
-			font-size: 1.6vw;
-		}
 		@media(max-width: 515px){
 			display: none; /* hidden at smallest size */
 		}
+		@media (min-width: $mobileUp) {
+			font-size: 1.6vw;
+		}
+		@media (min-width: $fullPageUp) {
+			font-size: 22px;
+		}
 	}
 	
-	.readMore {
+	p#askLink {
 		position: absolute;
+		padding-right: 5px;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: 700;
+		text-align: right;
+		text-transform: uppercase;
 		a {
 			color: $yellow;
 		}
-		@media(max-width: 515px){
+		@media (max-width: 399px) {
+			right: 2vw;
+			font-size: 3.5vw;
+		}
+		@media(min-width: 400px){
+			right: 9.3vw;
+		}
+		@media (max-width: 515px) {
 			bottom: auto;
-			top: -600%;
-			left: 48%;
+			top: -7vw; 
+			line-height: 6.2vw;
+			padding-top: 0;
+			z-index: 2; // keep color above transparent background of location
 		}
 		@media(min-width: 516px){
-			bottom: -50%;
+			bottom: 5px;
 			right: 0;
 			width: auto;
 		}
@@ -85,33 +116,115 @@
 			right: auto;
 			width: 100%;
 			text-align: center;
+			font-size: 1.1vw;
 		}
 		@media (min-width: $mobileUp) and (max-width: 975px) {
-			font-size: 1.1vw;
 			line-height: 1.2vw;
 			padding-top: 5px;
 		}
 		@media (min-width: 975px) {
 			right: 0;
 			width: auto;
-			bottom: 0;
+			bottom: 5px;
 			padding-bottom: 0px;
 		}
+		@media (min-width: $fullPageUp) {
+			font-size: 14px;
+			line-height: 23px;
+		}
 	}
-	
 	p#location{
 		position: absolute;
-		@media(max-width: 515px){
-			top: -450%;
+		@media (max-width: 399px) {
+			padding-left: 2vw;
+			font-size: 3.5vw;
+		}
+		@media(min-width: 400px){
+			padding-left: 9.3vw;
+		}
+		@media (max-width: 515px) {
+			line-height: 6.2vw;
+			top: -7vw;
 			width: 100%;
 			background-color: rgba(25,25,25,0.4);
-			padding-left: 13%;
 		}
 		@media(min-width: 516px){
-			bottom: -45%;
+			bottom: 5px;
+			padding-left: 5px;
 		}
 		@media (min-width: $mobileUp) {
 			bottom: 0;
+			font-size: 1.1vw;
+		}
+		@media (min-width: $tabletUp) {
+			bottom: 5px;
+			font-size: 1vw;
+		}
+		@media (min-width: $fullPageUp) {
+			font-size: 14px;
+		}
+	}
+	
+	/* Error versions */
+	p#findLink {
+		position: absolute;
+		padding-bottom: 0;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: 700;
+		text-align: right;
+		text-transform: uppercase;
+		a {
+			color: $yellow;
+			z-index: 2; // keep color above transparent background of location
+		}
+		@media (max-width: 399px) {
+			right: 2vw;
+			font-size: 3.5vw;
+		}
+		@media(min-width: 400px){
+			right: 9.3vw;
+		}
+		@media (max-width: 515px) {
+			bottom: auto;
+			top: -7vw;
+			line-height: 6.2vw;
+			padding-top: 0;
+			width: 100%;
+			background-color: rgba(25,25,25,0.4);
+		}
+		@media(min-width: 516px){
+			bottom: 5px;
+			right: 5px;
+			width: auto;
+		}
+		@media(min-width: $mobileUp){
+			bottom: 0;
+			font-size: 1.1vw;
+		}
+		@media (min-width: $mobileUp) and (max-width: 975px) {
+			line-height: 1.2vw;
+			padding-top: 5px;
+		}
+		@media (min-width: 975px) {
+			padding-bottom: 0px;
+		}
+		@media (min-width: $fullPageUp) {
+			font-size: 14px;
+		}
+	}
+	p#geoError {
+		font-size: 2.8vw;
+		@media (max-width: 515px) {
+			display: none;
+		}
+		@media (min-width: $mobileUp) {
+			font-size: 1.7vw;
+			line-height: 1.8vw;			
+			padding: 5px;
+		}
+		@media (min-width: $fullPageUp) {
+			font-size: 22px;
+			line-height: 23px;
 		}
 	}
 }
