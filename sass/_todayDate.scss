@@ -1,4 +1,4 @@
-// TODAY DATE
+/* TODAY DATE */
 
 .todayDate {
 	background: {
@@ -20,8 +20,9 @@
 .todayDate .dateMonth {
 	@include sanSerifFontFamily-nonBold;
 	color: $taylor-blue;
+	text-transform: uppercase;
 	margin: {
-		top: 0;
+		bottom: 5px;
 	}
 	padding: {
 		top: 5px;
@@ -40,7 +41,10 @@
 			height: 2vw;
 		}
 		padding: {
-			top: 15px;
+			top: .9vw;
+		}
+		margin: {
+			bottom: .9vw;
 		}
 	}
 	@media (min-width: $fullPageUp){
@@ -49,6 +53,12 @@
 		}
 		line: {
 			height: 26px;
+		}
+		padding: {
+			top: 14px;
+		}
+		margin: {
+			bottom: 14px;
 		}
 	}
 }
@@ -68,7 +78,7 @@
 			size: 9.4vw;
 		}
 		line: {
-			height: 9vw;
+			height: 8.4vw;
 		}
 	}
 	@media (min-width: $fullPageUp){
