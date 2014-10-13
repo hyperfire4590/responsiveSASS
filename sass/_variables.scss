@@ -2,21 +2,25 @@
 
 //COLORS
 $black: #000000;
-$burnt-orange: #b06030;
+$white: #ffffff;
 $grey-dark: lighten(adjust_hue(#000000, 0), 10);                    // #1a1a1a - main background color
 $grey-medium: lighten(adjust_hue(#000000, 0), 40);                  // #666666
 $grey-light: lighten(#000000, 80);                                  // #cccccc
 $grey-very-light: lighten(adjust_hue(#000000, 0), 90);              // #e6e6e6
 $grey-steel: #3f3c3d;
-$orange: #f47920;
 $silver: #c0c0c0;
-$taylor-blue: #00adef;
-$taylor-green: #00954d;
-$taylor-drk-grn: #007476; 
-$taylor-slate: #7d999b;                                             // slate color
-$taylor-purple: #5a3358;
-$white: #ffffff;
+
+
+// TAYLOR DESIGN
+$burnt-orange: #b06030;
 $yellow: #ffcb05;
+$orange: #f47920;
+$taylor-purple: #5a3358;
+$taylor-blue: #00adef;                                              // turquoise, sky blue
+$taylor-drk-grn: #007476;                                           // teal
+$taylor-slate: #7d999b;
+$taylor-green: #00954d;                                             // kelly green
+
 //THEME COLORS
 $theme-steel-grey: #4b4b5f;
 $theme-dark-grey: #23231c;

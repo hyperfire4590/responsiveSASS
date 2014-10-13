@@ -1,5 +1,11 @@
 /* COUNSELOR TILE */
 
+#counselorTile.landingVersion .imgHolder a {
+	&:hover, &:focus {
+		opacity: 1;
+	}
+}
+
 #counselorTile{
 	color: $white;
 	background-color: #191919;

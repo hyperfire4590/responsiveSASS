@@ -1,0 +1,78 @@
+/* LANDING TOP TILES */
+
+
+  .landingTop h2{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 8vw;
+    font-style: italic;
+    line-height: 6vw;
+    color: #fff;
+    /*position: absolute;
+    bottom: 60px;
+    top: auto;*/
+    padding:10px 20px 10px 10px;
+    width: 100%;
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  .landingTop h3{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    width:100%;
+    height: 50px;
+    /*margin-top:-50px;*/
+    padding: 10px 15px;
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+  }  
+  .landingOverlay h3 a{
+    color: #fff;
+  }
+  
+  @media (min-width: 641px){
+    .landingTop h2{
+      font-size: 3.3vw;
+      line-height: 2.9vw;
+    }
+  }
+  @media (min-width: 641px){
+  .landingTop h3{
+      font-size: 1.4vw;
+    }
+  }
+  @media (min-width: 851px){
+  .landingTop h3{
+      font-size: 12px;
+    }
+  }
+  @media (min-width: 1321px) {
+    .landingTop h2{
+      font-size: 44px;
+      line-height: 38px;
+    }
+  }
+
+  .landingTop .landingTopContainer {
+    position: absolute;
+    /* accounts for padding surrounding tiles */
+    top: 2px;
+    bottom: 2px;
+    right: 5px;
+    left: 5px; 
+	@media (min-width: 641px) {
+		top: 5px;
+		bottom: 5px;
+	}
+  }
+  .landingTop .headerWrap {
+    display: table;
+    height: 84%; /* leaves space for bottom text */
+    width: 100%; 
+  }
+  .landingTop .subtitleWrap {
+    display: table;
+    height: 16%;
+    width: 100%; 
+  }

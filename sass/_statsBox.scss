@@ -9,10 +9,13 @@
 			align: center;
 		}
 		padding: {
-			bottom: 40%;
+			bottom: 50%;
 		}
 	}
 	height: 0; 
+	#textWrapper {
+		height: 84%;
+	}
 	/*@media (min-width: $mobileUp){
 		padding: {
 			bottom: 205%;

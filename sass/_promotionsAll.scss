@@ -1,0 +1,98 @@
+/* PROMOTION STYLES */
+
+.adPromo h2, .eventPromo h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	display: table-cell;
+	vertical-align: bottom;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+}
+.adPromo h2 {
+	font-size: 4.9vw;
+	line-height: 4.7vw;
+	color: #fff;
+}
+  @media (min-width: 641px) {
+    .adPromo h2 {
+      font-size: 2.1vw;
+      line-height: 1.95vw;
+    }
+  }
+  @media (min-width: 1321px) {
+    .adPromo h2 {
+      font-size: 28px;
+      line-height: 26px;
+    }
+  }
+  .eventPromo h2 {
+	font-style: italic;
+	font-size: 9vw;
+	line-height: 8.5vw;
+	color: #fff;
+  }
+  @media (min-width: 641px) {
+    .eventPromo h2 {
+      font-size: 3.7vw;
+      line-height: 3.3vw;
+    }
+  }
+  @media (min-width: 1321px) {
+    .eventPromo h2 {
+	  font-size: 46px;
+	  line-height: 40px;
+    }
+  }
+  .adPromo .promoButton, .eventPromo .promoButton {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.8vw;
+    line-height: 2.8vw;
+    background-color: #fff;
+    color: #666;
+    width: 80%;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+  }
+  @media (min-width: 641px) {
+    .adPromo .promoButton, .eventPromo .promoButton {
+      font-size: 1.1vw;
+      line-height: 1.1vw;
+    }
+  }
+  @media (min-width: 1321px) {
+    .adPromo .promoButton, .eventPromo .promoButton {
+      font-size: 15px;
+      line-height: 15px;
+    }
+  }
+  @media (max-width: 640px) {
+    .adPromo .tileColor, .eventPromo .tileColor {
+      padding-bottom: 35vw !important;
+    }
+  }
+  .adPromo a.noImage, .eventPromo a.noImage {
+    position: absolute;
+	/* accounts for padding surrounding tiles */
+    top: 2px;
+    bottom: 2px;
+    right: 5px;
+    left: 5px; 
+	@media (min-width: 641px) {
+		top: 5px;
+		bottom: 5px;
+	}
+  }
+  .adPromo .textWrapper, .eventPromo .textWrapper {
+    display: table;
+    height: 68%; /* leaves space for p tag text */
+    width: 100%; 
+  }
+
+  
+  
+  
+  

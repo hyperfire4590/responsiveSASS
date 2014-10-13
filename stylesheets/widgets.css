@@ -593,8 +593,222 @@ input#interestSubmit {
   }
 }
 
+/* LANDING TOP TILES */
+/* line 4, ../sass/_landingTopTiles.scss */
+.landingTop h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 8vw;
+  font-style: italic;
+  line-height: 6vw;
+  color: #fff;
+  /*position: absolute;
+  bottom: 60px;
+  top: auto;*/
+  padding: 10px 20px 10px 10px;
+  width: 100%;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+/* line 18, ../sass/_landingTopTiles.scss */
+.landingTop h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  /*margin-top:-50px;*/
+  padding: 10px 15px;
+  text-transform: uppercase;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 30, ../sass/_landingTopTiles.scss */
+.landingOverlay h3 a {
+  color: #fff;
+}
+
+@media (min-width: 641px) {
+  /* line 35, ../sass/_landingTopTiles.scss */
+  .landingTop h2 {
+    font-size: 3.3vw;
+    line-height: 2.9vw;
+  }
+}
+@media (min-width: 641px) {
+  /* line 41, ../sass/_landingTopTiles.scss */
+  .landingTop h3 {
+    font-size: 1.4vw;
+  }
+}
+@media (min-width: 851px) {
+  /* line 46, ../sass/_landingTopTiles.scss */
+  .landingTop h3 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1321px) {
+  /* line 51, ../sass/_landingTopTiles.scss */
+  .landingTop h2 {
+    font-size: 44px;
+    line-height: 38px;
+  }
+}
+/* line 57, ../sass/_landingTopTiles.scss */
+.landingTop .landingTopContainer {
+  position: absolute;
+  /* accounts for padding surrounding tiles */
+  top: 2px;
+  bottom: 2px;
+  right: 5px;
+  left: 5px;
+}
+@media (min-width: 641px) {
+  /* line 57, ../sass/_landingTopTiles.scss */
+  .landingTop .landingTopContainer {
+    top: 5px;
+    bottom: 5px;
+  }
+}
+
+/* line 69, ../sass/_landingTopTiles.scss */
+.landingTop .headerWrap {
+  display: table;
+  height: 84%;
+  /* leaves space for bottom text */
+  width: 100%;
+}
+
+/* line 74, ../sass/_landingTopTiles.scss */
+.landingTop .subtitleWrap {
+  display: table;
+  height: 16%;
+  width: 100%;
+}
+
+/* PROMOTION STYLES */
+/* line 3, ../sass/_promotionsAll.scss */
+.adPromo h2, .eventPromo h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  display: table-cell;
+  vertical-align: bottom;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 12, ../sass/_promotionsAll.scss */
+.adPromo h2 {
+  font-size: 4.9vw;
+  line-height: 4.7vw;
+  color: #fff;
+}
+
+@media (min-width: 641px) {
+  /* line 18, ../sass/_promotionsAll.scss */
+  .adPromo h2 {
+    font-size: 2.1vw;
+    line-height: 1.95vw;
+  }
+}
+@media (min-width: 1321px) {
+  /* line 24, ../sass/_promotionsAll.scss */
+  .adPromo h2 {
+    font-size: 28px;
+    line-height: 26px;
+  }
+}
+/* line 29, ../sass/_promotionsAll.scss */
+.eventPromo h2 {
+  font-style: italic;
+  font-size: 9vw;
+  line-height: 8.5vw;
+  color: #fff;
+}
+
+@media (min-width: 641px) {
+  /* line 36, ../sass/_promotionsAll.scss */
+  .eventPromo h2 {
+    font-size: 3.7vw;
+    line-height: 3.3vw;
+  }
+}
+@media (min-width: 1321px) {
+  /* line 42, ../sass/_promotionsAll.scss */
+  .eventPromo h2 {
+    font-size: 46px;
+    line-height: 40px;
+  }
+}
+/* line 47, ../sass/_promotionsAll.scss */
+.adPromo .promoButton, .eventPromo .promoButton {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.8vw;
+  line-height: 2.8vw;
+  background-color: #fff;
+  color: #666;
+  width: 80%;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+}
+
+@media (min-width: 641px) {
+  /* line 61, ../sass/_promotionsAll.scss */
+  .adPromo .promoButton, .eventPromo .promoButton {
+    font-size: 1.1vw;
+    line-height: 1.1vw;
+  }
+}
+@media (min-width: 1321px) {
+  /* line 67, ../sass/_promotionsAll.scss */
+  .adPromo .promoButton, .eventPromo .promoButton {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 640px) {
+  /* line 73, ../sass/_promotionsAll.scss */
+  .adPromo .tileColor, .eventPromo .tileColor {
+    padding-bottom: 35vw !important;
+  }
+}
+/* line 77, ../sass/_promotionsAll.scss */
+.adPromo a.noImage, .eventPromo a.noImage {
+  position: absolute;
+  /* accounts for padding surrounding tiles */
+  top: 2px;
+  bottom: 2px;
+  right: 5px;
+  left: 5px;
+}
+@media (min-width: 641px) {
+  /* line 77, ../sass/_promotionsAll.scss */
+  .adPromo a.noImage, .eventPromo a.noImage {
+    top: 5px;
+    bottom: 5px;
+  }
+}
+
+/* line 89, ../sass/_promotionsAll.scss */
+.adPromo .textWrapper, .eventPromo .textWrapper {
+  display: table;
+  height: 68%;
+  /* leaves space for p tag text */
+  width: 100%;
+}
+
 /* COUNSELOR TILE */
-/* line 3, ../sass/_counselorByGeolocation.scss */
+/* line 4, ../sass/_counselorByGeolocation.scss */
+#counselorTile.landingVersion .imgHolder a:hover, #counselorTile.landingVersion .imgHolder a:focus {
+  opacity: 1;
+}
+
+/* line 9, ../sass/_counselorByGeolocation.scss */
 #counselorTile {
   color: white;
   background-color: #191919;
@@ -604,40 +818,40 @@ input#interestSubmit {
   /* Error versions */
 }
 @media (min-width: 641px) {
-  /* line 3, ../sass/_counselorByGeolocation.scss */
+  /* line 9, ../sass/_counselorByGeolocation.scss */
   #counselorTile {
     padding-bottom: 100%;
   }
 }
-/* line 12, ../sass/_counselorByGeolocation.scss */
+/* line 18, ../sass/_counselorByGeolocation.scss */
 #counselorTile strong {
   font-weight: 700;
 }
-/* line 17, ../sass/_counselorByGeolocation.scss */
+/* line 23, ../sass/_counselorByGeolocation.scss */
 #counselorTile .imgHolder {
   text-align: center;
 }
-/* line 19, ../sass/_counselorByGeolocation.scss */
+/* line 25, ../sass/_counselorByGeolocation.scss */
 #counselorTile .imgHolder img {
   padding: 5px;
 }
-/* line 23, ../sass/_counselorByGeolocation.scss */
+/* line 29, ../sass/_counselorByGeolocation.scss */
 #counselorTile .counselorTextbox {
   height: 10vw;
 }
 @media (min-width: 641px) {
-  /* line 23, ../sass/_counselorByGeolocation.scss */
+  /* line 29, ../sass/_counselorByGeolocation.scss */
   #counselorTile .counselorTextbox {
     height: 13vw;
   }
 }
 @media (min-width: 1321px) {
-  /* line 23, ../sass/_counselorByGeolocation.scss */
+  /* line 29, ../sass/_counselorByGeolocation.scss */
   #counselorTile .counselorTextbox {
     height: 190px;
   }
 }
-/* line 32, ../sass/_counselorByGeolocation.scss */
+/* line 38, ../sass/_counselorByGeolocation.scss */
 #counselorTile h2 {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -646,19 +860,19 @@ input#interestSubmit {
   position: absolute;
 }
 @media (max-width: 399px) {
-  /* line 32, ../sass/_counselorByGeolocation.scss */
+  /* line 38, ../sass/_counselorByGeolocation.scss */
   #counselorTile h2 {
     top: -48vw;
   }
 }
 @media (min-width: 400px) {
-  /* line 32, ../sass/_counselorByGeolocation.scss */
+  /* line 38, ../sass/_counselorByGeolocation.scss */
   #counselorTile h2 {
     top: -200px;
   }
 }
 @media (max-width: 640px) {
-  /* line 32, ../sass/_counselorByGeolocation.scss */
+  /* line 38, ../sass/_counselorByGeolocation.scss */
   #counselorTile h2 {
     width: 100%;
     padding-top: 20px;
@@ -669,7 +883,7 @@ input#interestSubmit {
   }
 }
 @media (min-width: 641px) {
-  /* line 32, ../sass/_counselorByGeolocation.scss */
+  /* line 38, ../sass/_counselorByGeolocation.scss */
   #counselorTile h2 {
     top: auto;
     position: relative;
@@ -680,17 +894,17 @@ input#interestSubmit {
   }
 }
 @media (min-width: 1321px) {
-  /* line 32, ../sass/_counselorByGeolocation.scss */
+  /* line 38, ../sass/_counselorByGeolocation.scss */
   #counselorTile h2 {
     font-size: 26px;
     line-height: 25px;
   }
 }
-/* line 65, ../sass/_counselorByGeolocation.scss */
+/* line 71, ../sass/_counselorByGeolocation.scss */
 #counselorTile p {
   margin-bottom: 0;
 }
-/* line 68, ../sass/_counselorByGeolocation.scss */
+/* line 74, ../sass/_counselorByGeolocation.scss */
 #counselorTile #counselorName {
   color: #00adef;
   margin-top: 5px;
@@ -701,25 +915,25 @@ input#interestSubmit {
   position: relative;
 }
 @media (max-width: 515px) {
-  /* line 68, ../sass/_counselorByGeolocation.scss */
+  /* line 74, ../sass/_counselorByGeolocation.scss */
   #counselorTile #counselorName {
     display: none;
     /* hidden at smallest size */
   }
 }
 @media (min-width: 641px) {
-  /* line 68, ../sass/_counselorByGeolocation.scss */
+  /* line 74, ../sass/_counselorByGeolocation.scss */
   #counselorTile #counselorName {
     font-size: 1.6vw;
   }
 }
 @media (min-width: 1321px) {
-  /* line 68, ../sass/_counselorByGeolocation.scss */
+  /* line 74, ../sass/_counselorByGeolocation.scss */
   #counselorTile #counselorName {
     font-size: 22px;
   }
 }
-/* line 87, ../sass/_counselorByGeolocation.scss */
+/* line 93, ../sass/_counselorByGeolocation.scss */
 #counselorTile p#askLink {
   position: absolute;
   padding-right: 5px;
@@ -728,25 +942,25 @@ input#interestSubmit {
   text-align: right;
   text-transform: uppercase;
 }
-/* line 94, ../sass/_counselorByGeolocation.scss */
+/* line 100, ../sass/_counselorByGeolocation.scss */
 #counselorTile p#askLink a {
   color: #ffcb05;
 }
 @media (max-width: 399px) {
-  /* line 87, ../sass/_counselorByGeolocation.scss */
+  /* line 93, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#askLink {
     right: 2vw;
     font-size: 3.5vw;
   }
 }
 @media (min-width: 400px) {
-  /* line 87, ../sass/_counselorByGeolocation.scss */
+  /* line 93, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#askLink {
     right: 9.3vw;
   }
 }
 @media (max-width: 515px) {
-  /* line 87, ../sass/_counselorByGeolocation.scss */
+  /* line 93, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#askLink {
     bottom: auto;
     top: -7vw;
@@ -756,7 +970,7 @@ input#interestSubmit {
   }
 }
 @media (min-width: 516px) {
-  /* line 87, ../sass/_counselorByGeolocation.scss */
+  /* line 93, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#askLink {
     bottom: 5px;
     right: 0;
@@ -764,7 +978,7 @@ input#interestSubmit {
   }
 }
 @media (min-width: 641px) {
-  /* line 87, ../sass/_counselorByGeolocation.scss */
+  /* line 93, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#askLink {
     bottom: auto;
     right: auto;
@@ -774,14 +988,14 @@ input#interestSubmit {
   }
 }
 @media (min-width: 641px) and (max-width: 975px) {
-  /* line 87, ../sass/_counselorByGeolocation.scss */
+  /* line 93, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#askLink {
     line-height: 1.2vw;
     padding-top: 5px;
   }
 }
 @media (min-width: 975px) {
-  /* line 87, ../sass/_counselorByGeolocation.scss */
+  /* line 93, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#askLink {
     right: 0;
     width: auto;
@@ -790,31 +1004,31 @@ input#interestSubmit {
   }
 }
 @media (min-width: 1321px) {
-  /* line 87, ../sass/_counselorByGeolocation.scss */
+  /* line 93, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#askLink {
     font-size: 14px;
     line-height: 23px;
   }
 }
-/* line 138, ../sass/_counselorByGeolocation.scss */
+/* line 144, ../sass/_counselorByGeolocation.scss */
 #counselorTile p#location {
   position: absolute;
 }
 @media (max-width: 399px) {
-  /* line 138, ../sass/_counselorByGeolocation.scss */
+  /* line 144, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#location {
     padding-left: 2vw;
     font-size: 3.5vw;
   }
 }
 @media (min-width: 400px) {
-  /* line 138, ../sass/_counselorByGeolocation.scss */
+  /* line 144, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#location {
     padding-left: 9.3vw;
   }
 }
 @media (max-width: 515px) {
-  /* line 138, ../sass/_counselorByGeolocation.scss */
+  /* line 144, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#location {
     line-height: 6.2vw;
     top: -7vw;
@@ -823,33 +1037,33 @@ input#interestSubmit {
   }
 }
 @media (min-width: 516px) {
-  /* line 138, ../sass/_counselorByGeolocation.scss */
+  /* line 144, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#location {
     bottom: 5px;
     padding-left: 5px;
   }
 }
 @media (min-width: 641px) {
-  /* line 138, ../sass/_counselorByGeolocation.scss */
+  /* line 144, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#location {
     bottom: 0;
     font-size: 1.1vw;
   }
 }
 @media (min-width: 940px) {
-  /* line 138, ../sass/_counselorByGeolocation.scss */
+  /* line 144, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#location {
     bottom: 5px;
     font-size: 1vw;
   }
 }
 @media (min-width: 1321px) {
-  /* line 138, ../sass/_counselorByGeolocation.scss */
+  /* line 144, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#location {
     font-size: 14px;
   }
 }
-/* line 171, ../sass/_counselorByGeolocation.scss */
+/* line 177, ../sass/_counselorByGeolocation.scss */
 #counselorTile p#findLink {
   position: absolute;
   padding-bottom: 0;
@@ -858,26 +1072,26 @@ input#interestSubmit {
   text-align: right;
   text-transform: uppercase;
 }
-/* line 178, ../sass/_counselorByGeolocation.scss */
+/* line 184, ../sass/_counselorByGeolocation.scss */
 #counselorTile p#findLink a {
   color: #ffcb05;
   z-index: 2;
 }
 @media (max-width: 399px) {
-  /* line 171, ../sass/_counselorByGeolocation.scss */
+  /* line 177, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#findLink {
     right: 2vw;
     font-size: 3.5vw;
   }
 }
 @media (min-width: 400px) {
-  /* line 171, ../sass/_counselorByGeolocation.scss */
+  /* line 177, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#findLink {
     right: 9.3vw;
   }
 }
 @media (max-width: 515px) {
-  /* line 171, ../sass/_counselorByGeolocation.scss */
+  /* line 177, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#findLink {
     bottom: auto;
     top: -7vw;
@@ -888,7 +1102,7 @@ input#interestSubmit {
   }
 }
 @media (min-width: 516px) {
-  /* line 171, ../sass/_counselorByGeolocation.scss */
+  /* line 177, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#findLink {
     bottom: 5px;
     right: 5px;
@@ -896,43 +1110,43 @@ input#interestSubmit {
   }
 }
 @media (min-width: 641px) {
-  /* line 171, ../sass/_counselorByGeolocation.scss */
+  /* line 177, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#findLink {
     bottom: 0;
     font-size: 1.1vw;
   }
 }
 @media (min-width: 641px) and (max-width: 975px) {
-  /* line 171, ../sass/_counselorByGeolocation.scss */
+  /* line 177, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#findLink {
     line-height: 1.2vw;
     padding-top: 5px;
   }
 }
 @media (min-width: 975px) {
-  /* line 171, ../sass/_counselorByGeolocation.scss */
+  /* line 177, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#findLink {
     padding-bottom: 0px;
   }
 }
 @media (min-width: 1321px) {
-  /* line 171, ../sass/_counselorByGeolocation.scss */
+  /* line 177, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#findLink {
     font-size: 14px;
   }
 }
-/* line 217, ../sass/_counselorByGeolocation.scss */
+/* line 223, ../sass/_counselorByGeolocation.scss */
 #counselorTile p#geoError {
   font-size: 2.8vw;
 }
 @media (max-width: 515px) {
-  /* line 217, ../sass/_counselorByGeolocation.scss */
+  /* line 223, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#geoError {
     display: none;
   }
 }
 @media (min-width: 641px) {
-  /* line 217, ../sass/_counselorByGeolocation.scss */
+  /* line 223, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#geoError {
     font-size: 1.7vw;
     line-height: 1.8vw;
@@ -940,7 +1154,7 @@ input#interestSubmit {
   }
 }
 @media (min-width: 1321px) {
-  /* line 217, ../sass/_counselorByGeolocation.scss */
+  /* line 223, ../sass/_counselorByGeolocation.scss */
   #counselorTile p#geoError {
     font-size: 22px;
     line-height: 23px;
@@ -1016,11 +1230,15 @@ input#interestSubmit {
   /* line 3, ../sass/_statsBox.scss */
   .statsBox {
     text-align: center;
-    padding-bottom: 40%;
+    padding-bottom: 50%;
   }
 }
+/* line 16, ../sass/_statsBox.scss */
+.statsBox #textWrapper {
+  height: 84%;
+}
 
-/* line 22, ../sass/_statsBox.scss */
+/* line 25, ../sass/_statsBox.scss */
 .statsBoxNumber {
   color: #5a3358;
   padding-top: 2vw;
@@ -1032,7 +1250,7 @@ input#interestSubmit {
   line-height: 15vw;
 }
 @media (min-width: 641px) {
-  /* line 22, ../sass/_statsBox.scss */
+  /* line 25, ../sass/_statsBox.scss */
   .statsBoxNumber {
     font-size: 5vw;
     line-height: 5.2vw;
@@ -1041,7 +1259,7 @@ input#interestSubmit {
   }
 }
 @media (min-width: 1321px) {
-  /* line 22, ../sass/_statsBox.scss */
+  /* line 25, ../sass/_statsBox.scss */
   .statsBoxNumber {
     font-size: 66px;
     line-height: 68px;
@@ -1050,7 +1268,7 @@ input#interestSubmit {
   }
 }
 
-/* line 64, ../sass/_statsBox.scss */
+/* line 67, ../sass/_statsBox.scss */
 .statsBoxContent {
   color: #5a3358;
   padding: 1.4vw;
@@ -1061,13 +1279,13 @@ input#interestSubmit {
   line-height: 4.4vw;
 }
 @media (max-width: 640px) {
-  /* line 64, ../sass/_statsBox.scss */
+  /* line 67, ../sass/_statsBox.scss */
   .statsBoxContent {
     text-align: center;
   }
 }
 @media (min-width: 641px) {
-  /* line 64, ../sass/_statsBox.scss */
+  /* line 67, ../sass/_statsBox.scss */
   .statsBoxContent {
     font-size: 1.7vw;
     line-height: 1.7vw;
@@ -1075,7 +1293,7 @@ input#interestSubmit {
   }
 }
 @media (min-width: 1321px) {
-  /* line 64, ../sass/_statsBox.scss */
+  /* line 67, ../sass/_statsBox.scss */
   .statsBoxContent {
     font-size: 24px;
     line-height: 23px;
