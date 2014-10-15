@@ -25,9 +25,15 @@
 		.audText {
 			color: $taylor-blue !important;
 			padding: 0 15px;
+			border: none;
+			border-bottom: 1px #666666 solid;
+			border-top: 1px #666666 solid;
+			color: #fff;
+			background-color: rgba(17, 17, 17, 0.5);
+			margin-right: 10px;
 		}
 		a {
-			color: $grey-medium !important;
+			color: $taylor-blue !important;
 			&.current {
 				background: {
 					color: $taylor-blue !important;

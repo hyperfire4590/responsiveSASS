@@ -1,0 +1,102 @@
+/* former BANNER Dept Interest Search */
+
+.deptSearch {
+	#interestSearch {
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 2.8vw;
+		line-height: 2.8vw;
+		background-color: #fff;
+		color: #666;
+		width: 80%;
+		text-align: center;
+		padding: 5px;
+		margin: auto;
+		@media (min-width: 641px) {
+			font-size: 1.1vw;
+			line-height: 1.1vw;
+		}
+		@media (min-width: 1321px) {
+			font-size: 15px;
+			line-height: 15px;
+		}
+	}
+	input {
+		&#interestKeyword {
+			background: {
+				color: $grey-very-light;
+				image: none;
+			}
+			border: none;
+			@include borderRadius(0);
+			color: $grey-medium;
+			@include sanSerifFontFamily-bold;
+			font: {
+				size: 2.5vw;
+			}
+			line: {
+				height: 2vw;
+			}
+			width: 100%;
+			height: 30px;
+			@media (min-width: 641px) {
+				font-size: 1vw;
+				line-height: 1vw;
+			}
+			@media (min-width: 1321px) {
+				font-size: 14px;
+				line-height: 14px;
+			}
+		}
+		&#interestSubmit {
+			display: none;
+		}
+	}
+	.noImage {
+		position: absolute;
+		top: 5px;
+		bottom: 5px;
+		right: 5px;
+		left: 5px;
+	}
+	.textWrapper {
+		height: 50%;
+	}
+}
+
+/* former BANNER Dept Interest Search */
+
+.deptSearchTop3 {
+	form#interestSearch {
+		margin-bottom: 0;
+	}
+	input {
+		&#interestKeyword {
+			background: {
+				color: $grey-very-light;
+				image: none;
+			}
+			border: none;
+			@include borderRadius(0);
+			color: $grey-medium;
+			@include sanSerifFontFamily-bold;
+			width: 100%;
+			height: 5vw;
+			font: {
+				size: 13px;
+			}
+			line: {
+				height: 14px;
+			}
+			padding: 0px 5px;
+			@media (min-width: $mobileUp) {
+				height: 30px;
+			}
+		}
+		&#interestSubmit {
+			display: none;
+		}
+	}
+}
+

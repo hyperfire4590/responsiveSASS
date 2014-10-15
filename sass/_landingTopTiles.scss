@@ -3,9 +3,9 @@
 
   .landingTop h2{
     font-family: "Times New Roman", Times, serif;
-    font-size: 8vw;
+    font-size: 7vw;
     font-style: italic;
-    line-height: 6vw;
+    line-height: 5vw;
     color: #fff;
     /*position: absolute;
     bottom: 60px;
@@ -20,9 +20,9 @@
     font-size: 12px;
     color: #fff;
     width:100%;
-    height: 50px;
+    height: auto;
     /*margin-top:-50px;*/
-    padding: 10px 15px;
+    padding: 0 15px;
     text-transform: uppercase;
     display: table-cell;
     vertical-align: middle;
@@ -40,6 +40,8 @@
   @media (min-width: 641px){
   .landingTop h3{
       font-size: 1.4vw;
+	  height: 50px;
+	  padding: 0 15px 10px;
     }
   }
   @media (min-width: 851px){
@@ -61,18 +63,24 @@
     bottom: 2px;
     right: 5px;
     left: 5px; 
-	@media (min-width: 641px) {
+	@media (min-width: $mobileUp) {
 		top: 5px;
 		bottom: 5px;
 	}
   }
   .landingTop .headerWrap {
     display: table;
-    height: 84%; /* leaves space for bottom text */
+    height: 82%; /* leaves space for bottom text */
     width: 100%; 
+	@media (min-width: $mobileUp){
+		height: 86%;
+	}
   }
   .landingTop .subtitleWrap {
     display: table;
-    height: 16%;
+    height: 18%;
     width: 100%; 
+	@media (min-width: $mobileUp){
+		height: 14%;
+	}
   }

@@ -80,6 +80,7 @@
 		line-height: 51px;
 		margin: {
 			top: 0;
+			bottom: 50px;
 		}
 		text: {
 			transform: none;
@@ -132,11 +133,6 @@
 		@media (max-width: 895px) {
 			display: none;
 		}
-		&#departmentSearchHeading {
-			@media (max-width: 895px) {
-				display: block;
-			}
-		}
 	}
 	ul {
 		li {
@@ -152,60 +148,11 @@
   display:none;
 }
 p {
-	&#departmentSearchHeading {
-		background: {
-			color: $taylor-blue;
-		}
-		@include serifFontFamily;
-		font: {
-				size: 17px;
-			}
-			margin: {
-				bottom: 0;
-			}
-			padding: 10px;
-			width: 56%;
-	}
 	@media (max-width: 895px) {
 		display: block;
 	}
 }
-input {
-	&#interestKeyword {
-		background: {
-			color: $grey-very-light;
-			image: none;
-		}
-		border: none;
-		@include borderRadius(0);
-		color: $grey-medium;
-		@include sanSerifFontFamily-bold;
-		font: {
-			size: 13px;
-		}
-		height: 30px;
-		line: {
-			height: 20px;
-		}
-		width: 56%;
-	}
-	&#interestSubmit {
-		display: none;
-	}
-}
-#bannerDeptSearch {
-	display: block;
-	margin: {
-		top: 20px;
-	}
-	padding: {
-		bottom: 20px;
-	}
-	text: {
-		align: left;
-	}
-	width: 100%;
-}
+
 @media (max-width: 850px) {
 	.withBannerOverlay{
 		position:relative;
@@ -297,18 +244,6 @@ input {
 			}
 		}
 	}
-	#bannerDeptSearch {
-		float:left;
-		margin: {
-			top: 10px;
-		}
-		padding: {
-			bottom: 0;
-		}
-	}
-	input#interestKeyword, p#departmentSearchHeading {
-    	width:100%;
-    }
 }
 .bannerOverlay ul li {
 	@media (max-width: 766px) {

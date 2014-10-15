@@ -12,16 +12,7 @@
 	padding: 15px;
 	width: 100%;
 }
-#shareInstagram {
-	display: block;
-	position: relative;
-	width: 100%;
-	&:hover {
-		.captionOverlay {
-			opacity: 0.7;
-		}
-	}
-}
+
 .instagramImage {
 	.mainImg {
 		float: left;
@@ -33,6 +24,23 @@
 		} 
 	}
 }
+/* css piece **/
+.innerModalWrapper{
+  position:relative;
+  height:100%;
+  width:100%;
+  display:block;
+}
+.reveal-modal:hover .captionOverlay{
+  opacity: 0.7;
+}
+.reveal-modal .close-reveal-modal{
+   right: 0.2875rem;
+}
+.reveal-modal img{
+  width:100%;
+}
+/* end css piece */
 
 /* Fix for colorbox caption and close button used on Instagram widget */
 

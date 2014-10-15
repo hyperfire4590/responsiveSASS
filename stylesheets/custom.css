@@ -272,12 +272,18 @@ header {
 #audButtonRow .audienceButtons .audText {
   color: #00adef !important;
   padding: 0 15px;
+  border: none;
+  border-bottom: 1px #666666 solid;
+  border-top: 1px #666666 solid;
+  color: #fff;
+  background-color: rgba(17, 17, 17, 0.5);
+  margin-right: 10px;
 }
-/* line 29, ../sass/_toptoolbarRow2.scss */
+/* line 35, ../sass/_toptoolbarRow2.scss */
 #audButtonRow .audienceButtons a {
   color: #666666 !important;
 }
-/* line 31, ../sass/_toptoolbarRow2.scss */
+/* line 37, ../sass/_toptoolbarRow2.scss */
 #audButtonRow .audienceButtons a.current {
   background-color: #00adef !important;
   color: white !important;
