@@ -11,7 +11,16 @@
     bottom: 60px;
     top: auto;*/
     padding:10px 20px 10px 10px;
-    width: 100%;
+	display: table;
+    height: 82%; /* leaves space for bottom text */
+    width: 100%; 
+	margin: 0;
+	@media (min-width: 641px){
+		height: 86%;
+	}
+	}
+  .landingTop h2 span {
+	width: 100%;
     display: table-cell;
     vertical-align: bottom;
   }
@@ -19,11 +28,19 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     color: #fff;
-    width:100%;
-    height: auto;
     /*margin-top:-50px;*/
     padding: 0 15px;
     text-transform: uppercase;
+	display: table;
+    height: 18%;
+    width: 100%; 
+	@media (min-width: 641px){
+		height: 14%;
+	}
+  }
+  .landingTop h3 span {
+	width:100%;
+    height: auto;
     display: table-cell;
     vertical-align: middle;
   }  
@@ -56,7 +73,7 @@
     }
   }
 
-  .landingTop .landingTopContainer {
+  .landingTop a{
     position: absolute;
     /* accounts for padding surrounding tiles */
     top: 2px;
@@ -68,19 +85,4 @@
 		bottom: 5px;
 	}
   }
-  .landingTop .headerWrap {
-    display: table;
-    height: 82%; /* leaves space for bottom text */
-    width: 100%; 
-	@media (min-width: $mobileUp){
-		height: 86%;
-	}
-  }
-  .landingTop .subtitleWrap {
-    display: table;
-    height: 18%;
-    width: 100%; 
-	@media (min-width: $mobileUp){
-		height: 14%;
-	}
-  }
+

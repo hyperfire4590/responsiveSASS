@@ -140,60 +140,63 @@
   color: #666666;
   font-size: 13px;
   font-weight: 700;
+  display: block;
+  height: 100%;
+  padding-top: 2px;
 }
 @media (max-width: 1220px) {
-  /* line 122, ../sass/_bannerOverlays.scss */
+  /* line 125, ../sass/_bannerOverlays.scss */
   .bannerOverlay p {
     line-height: 22px;
   }
 }
 @media (max-width: 1050px) {
-  /* line 122, ../sass/_bannerOverlays.scss */
+  /* line 125, ../sass/_bannerOverlays.scss */
   .bannerOverlay p {
     line-height: 18px;
   }
 }
 @media (max-width: 895px) {
-  /* line 122, ../sass/_bannerOverlays.scss */
+  /* line 125, ../sass/_bannerOverlays.scss */
   .bannerOverlay p {
     display: none;
   }
 }
-/* line 140, ../sass/_bannerOverlays.scss */
+/* line 143, ../sass/_bannerOverlays.scss */
 .bannerOverlay ul li:hover a {
   color: #e6e6e6;
 }
 
-/* line 147, ../sass/_bannerOverlays.scss */
+/* line 150, ../sass/_bannerOverlays.scss */
 .bannerMobileOverlay {
   display: none;
 }
 
 @media (max-width: 895px) {
-  /* line 150, ../sass/_bannerOverlays.scss */
+  /* line 153, ../sass/_bannerOverlays.scss */
   p {
     display: block;
   }
 }
 
 @media (max-width: 850px) {
-  /* line 157, ../sass/_bannerOverlays.scss */
+  /* line 160, ../sass/_bannerOverlays.scss */
   .withBannerOverlay {
     position: relative;
     left: auto;
     bottom: auto;
   }
 
-  /* line 163, ../sass/_bannerOverlays.scss */
+  /* line 166, ../sass/_bannerOverlays.scss */
   .banner:hover a, .banner a:hover {
     opacity: 0.3;
   }
-  /* line 167, ../sass/_bannerOverlays.scss */
+  /* line 170, ../sass/_bannerOverlays.scss */
   .banner:hover .bannerMobileOverlay {
     background: transparent;
   }
 
-  /* line 172, ../sass/_bannerOverlays.scss */
+  /* line 175, ../sass/_bannerOverlays.scss */
   .bannerMobileOverlay {
     /* IE9 SVG, needs conditional override of 'filter' to 'none' *For Banner Gradient*/
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
@@ -217,7 +220,7 @@
     text-align: center;
     width: 100%;
   }
-  /* line 189, ../sass/_bannerOverlays.scss */
+  /* line 192, ../sass/_bannerOverlays.scss */
   .bannerMobileOverlay h1 {
     color: white;
     font-family: "Helvetica Bold", Helvetica, Arial, sans-serif;
@@ -226,7 +229,7 @@
     margin-bottom: 0;
     text-transform: none;
   }
-  /* line 205, ../sass/_bannerOverlays.scss */
+  /* line 208, ../sass/_bannerOverlays.scss */
   .bannerMobileOverlay h2 {
     color: white;
     font-family: "Helvetica Bold", Helvetica, Arial, sans-serif;
@@ -236,7 +239,7 @@
     text-transform: none;
   }
 
-  /* line 222, ../sass/_bannerOverlays.scss */
+  /* line 225, ../sass/_bannerOverlays.scss */
   .bannerOverlay {
     background: transparent;
     filter: none;
@@ -247,15 +250,15 @@
     bottom: auto;
     width: 100%;
   }
-  /* line 231, ../sass/_bannerOverlays.scss */
+  /* line 234, ../sass/_bannerOverlays.scss */
   .bannerOverlay h1, .bannerOverlay h2 {
     display: none;
   }
-  /* line 234, ../sass/_bannerOverlays.scss */
+  /* line 237, ../sass/_bannerOverlays.scss */
   .bannerOverlay ul, .bannerOverlay p {
     width: 100%;
   }
-  /* line 238, ../sass/_bannerOverlays.scss */
+  /* line 241, ../sass/_bannerOverlays.scss */
   .bannerOverlay ul li {
     background: #e6e6e6;
     float: left;
@@ -265,19 +268,19 @@
   }
 }
 @media (max-width: 766px) {
-  /* line 248, ../sass/_bannerOverlays.scss */
+  /* line 251, ../sass/_bannerOverlays.scss */
   .bannerOverlay ul li {
     margin: 5px 6px;
   }
 }
 @media (max-width: 666px) {
-  /* line 248, ../sass/_bannerOverlays.scss */
+  /* line 251, ../sass/_bannerOverlays.scss */
   .bannerOverlay ul li {
     margin: 5px;
   }
 }
 @media (max-width: 589px) {
-  /* line 248, ../sass/_bannerOverlays.scss */
+  /* line 251, ../sass/_bannerOverlays.scss */
   .bannerOverlay ul li {
     background: #e6e6e6;
     float: none;
@@ -549,39 +552,67 @@
   bottom: 60px;
   top: auto;*/
   padding: 10px 20px 10px 10px;
+  display: table;
+  height: 82%;
+  /* leaves space for bottom text */
+  width: 100%;
+  margin: 0;
+}
+@media (min-width: 641px) {
+  /* line 4, ../sass/_landingTopTiles.scss */
+  .landingTop h2 {
+    height: 86%;
+  }
+}
+
+/* line 22, ../sass/_landingTopTiles.scss */
+.landingTop h2 span {
   width: 100%;
   display: table-cell;
   vertical-align: bottom;
 }
 
-/* line 18, ../sass/_landingTopTiles.scss */
+/* line 27, ../sass/_landingTopTiles.scss */
 .landingTop h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #fff;
-  width: 100%;
-  height: auto;
   /*margin-top:-50px;*/
   padding: 0 15px;
   text-transform: uppercase;
+  display: table;
+  height: 18%;
+  width: 100%;
+}
+@media (min-width: 641px) {
+  /* line 27, ../sass/_landingTopTiles.scss */
+  .landingTop h3 {
+    height: 14%;
+  }
+}
+
+/* line 41, ../sass/_landingTopTiles.scss */
+.landingTop h3 span {
+  width: 100%;
+  height: auto;
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 30, ../sass/_landingTopTiles.scss */
+/* line 47, ../sass/_landingTopTiles.scss */
 .landingOverlay h3 a {
   color: #fff;
 }
 
 @media (min-width: 641px) {
-  /* line 35, ../sass/_landingTopTiles.scss */
+  /* line 52, ../sass/_landingTopTiles.scss */
   .landingTop h2 {
     font-size: 3.3vw;
     line-height: 2.9vw;
   }
 }
 @media (min-width: 641px) {
-  /* line 41, ../sass/_landingTopTiles.scss */
+  /* line 58, ../sass/_landingTopTiles.scss */
   .landingTop h3 {
     font-size: 1.4vw;
     height: 50px;
@@ -589,20 +620,20 @@
   }
 }
 @media (min-width: 851px) {
-  /* line 48, ../sass/_landingTopTiles.scss */
+  /* line 65, ../sass/_landingTopTiles.scss */
   .landingTop h3 {
     font-size: 12px;
   }
 }
 @media (min-width: 1321px) {
-  /* line 53, ../sass/_landingTopTiles.scss */
+  /* line 70, ../sass/_landingTopTiles.scss */
   .landingTop h2 {
     font-size: 44px;
     line-height: 38px;
   }
 }
-/* line 59, ../sass/_landingTopTiles.scss */
-.landingTop .landingTopContainer {
+/* line 76, ../sass/_landingTopTiles.scss */
+.landingTop a {
   position: absolute;
   /* accounts for padding surrounding tiles */
   top: 2px;
@@ -611,37 +642,10 @@
   left: 5px;
 }
 @media (min-width: 641px) {
-  /* line 59, ../sass/_landingTopTiles.scss */
-  .landingTop .landingTopContainer {
+  /* line 76, ../sass/_landingTopTiles.scss */
+  .landingTop a {
     top: 5px;
     bottom: 5px;
-  }
-}
-
-/* line 71, ../sass/_landingTopTiles.scss */
-.landingTop .headerWrap {
-  display: table;
-  height: 82%;
-  /* leaves space for bottom text */
-  width: 100%;
-}
-@media (min-width: 641px) {
-  /* line 71, ../sass/_landingTopTiles.scss */
-  .landingTop .headerWrap {
-    height: 86%;
-  }
-}
-
-/* line 79, ../sass/_landingTopTiles.scss */
-.landingTop .subtitleWrap {
-  display: table;
-  height: 18%;
-  width: 100%;
-}
-@media (min-width: 641px) {
-  /* line 79, ../sass/_landingTopTiles.scss */
-  .landingTop .subtitleWrap {
-    height: 14%;
   }
 }
 
