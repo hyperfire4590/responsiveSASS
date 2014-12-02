@@ -39,7 +39,7 @@
 				height: 2vw;
 			}
 			width: 100%;
-			height: 30px;
+			height: auto;
 			@media (min-width: 641px) {
 				font-size: 1vw;
 				line-height: 1vw;
@@ -60,9 +60,9 @@
 		right: 5px;
 		left: 5px;
 	}
-	.textWrapper {
+	/*.textWrapper {
 		height: 50%;
-	}
+	}*/
 }
 
 /* former BANNER Dept Interest Search */
