@@ -163,10 +163,12 @@
 		@media (min-width: $mobileUp) {
 			bottom: 0;
 			font-size: 1.1vw;
+			width: 100%;
 		}
 		@media (min-width: $tabletUp) {
 			bottom: 5px;
 			font-size: 1vw;
+			width: auto;
 		}
 		@media (min-width: $fullPageUp) {
 			font-size: 14px;
