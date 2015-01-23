@@ -119,21 +119,21 @@ body {
 /*White Class for Testing Template Background Color*/
 /* line 63, ../sass/_generalCSS.scss */
 .white {
-  background: white !important;
+  background: #ffffff !important;
 }
 /* line 65, ../sass/_generalCSS.scss */
 .white .prospectiveStudent {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 /* line 69, ../sass/_generalCSS.scss */
 #main.white .row {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 /* line 72, ../sass/_generalCSS.scss */
 header {
-  background-color: white;
+  background-color: #ffffff;
   background-image: none;
 }
 
@@ -208,7 +208,7 @@ header {
 
 /* line 44, ../sass/_toptoolbarRow1.scss */
 .fi-magnifying-glass.medium-fi {
-  color: white;
+  color: #ffffff;
 }
 
 /* line 47, ../sass/_toptoolbarRow1.scss */
@@ -255,9 +255,9 @@ header {
 /* line 7, ../sass/_toptoolbarRow2.scss */
 #audButtonRow .audienceButtons, #audButtonRow .audienceButtons li, #audButtonRow .audienceButtons a {
   font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
-  line-height: 16px !important;
+  line-height: 20px !important;
   text-transform: uppercase;
 }
 /* line 18, ../sass/_toptoolbarRow2.scss */
@@ -281,12 +281,12 @@ header {
 }
 /* line 35, ../sass/_toptoolbarRow2.scss */
 #audButtonRow .audienceButtons a {
-  color: #666666 !important;
+  color: #00adef !important;
 }
 /* line 37, ../sass/_toptoolbarRow2.scss */
 #audButtonRow .audienceButtons a.current {
   background-color: #00adef !important;
-  color: white !important;
+  color: #ffffff !important;
 }
 
 /* TOP-NAV - Top-bar - mainNav and admButtons */
@@ -394,7 +394,7 @@ header {
 
 /* line 117, ../sass/_topnavTopBar.scss */
 .admButtons, .admButtons li, .admButtons a {
-  color: white !important;
+  color: #ffffff !important;
   font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif;
   font-size: 11px !important;
   font-weight: 700 !important;
@@ -470,7 +470,7 @@ header {
 /* line 210, ../sass/_topnavTopBar.scss */
 .top-bar-section #mainNav li:not(.has-form):hover a:not(.button), .top-bar-section #mainNav li:not(.has-form) a:not(.button):hover {
   background-color: rgba(17, 17, 17, 0.5);
-  color: white !important;
+  color: #ffffff !important;
 }
 /* line 216, ../sass/_topnavTopBar.scss */
 .top-bar-section .has-dropdown {
@@ -560,7 +560,7 @@ header {
 }
 /* line 55, ../sass/_mobileMenuTabBar.scss */
 .show-for-mobile-menu .admButtons li a {
-  color: white;
+  color: #ffffff;
   font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif;
   display: block;
   width: 100%;
@@ -691,7 +691,7 @@ ul.off-canvas-list li.has-submenu > a:after {
 /* line 82, ../sass/_footer.scss */
 .footer-links h2 {
   border-bottom: none;
-  color: white;
+  color: #ffffff;
   font-family: "Helvetica Oblique", Helvetica, Arial, sans-serif;
   font-size: 10px;
   font-weight: 700;

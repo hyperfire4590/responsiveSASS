@@ -7,10 +7,10 @@
 	.audienceButtons, .audienceButtons li, .audienceButtons a {
 		@include sanSerifFontFamily;
 		font: {
-			size: 11px;
+			size: 12px;
 			weight: $fontBold;
 		}
-		line-height: 16px !important;
+		line-height: 20px !important;
 		text: {
 			transform: uppercase;
 		}

@@ -1,8 +1,747 @@
+/**** GENERAL ISOTOPE PAGE CHANGES ****/
+/*Custom CSS Transitions - mg*/
 @import url(/application/themes/foundation-starter-site/css/prettyPhoto.css);
 @import url(/application/themes/foundation-starter-site/css/chosen.css);
 @import url(/application/themes/foundation-starter-site/css/flexslider.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600);
 @import url(http://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400,700italic);
+/* line 4, ../sass/_isotope.scss */
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+/* line 8, ../sass/_isotope.scss */
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+/* line 13, ../sass/_isotope.scss */
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+/** disabling Isotope CSS3 transitions **/
+/* line 18, ../sass/_isotope.scss */
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+@media (max-width: 1070px) {
+  /* line 2, ../sass/_generalCSS.scss */
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0 0 23px 0;
+    text-transform: uppercase;
+  }
+
+  /* line 13, ../sass/_generalCSS.scss */
+  h2 {
+    color: #b06030;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+/* CSS Classes from base.css */
+/* line 26, ../sass/_generalCSS.scss */
+.clear {
+  clear: both;
+}
+
+/* line 29, ../sass/_generalCSS.scss */
+.clear-right {
+  clear: right;
+}
+
+/* line 32, ../sass/_generalCSS.scss */
+.clear-left {
+  clear: left;
+}
+
+/* line 35, ../sass/_generalCSS.scss */
+body {
+  background: #1a1a1a !important;
+}
+
+/* line 38, ../sass/_generalCSS.scss */
+#main {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  max-width: 1240px !important;
+}
+/* line 41, ../sass/_generalCSS.scss */
+#main .row {
+  background-color: #1a1a1a;
+}
+
+/* line 47, ../sass/_generalCSS.scss */
+.row {
+  max-width: 1240px !important;
+  padding: 10px 20px 20px 20px !important;
+}
+
+@media (max-width: 640px) {
+  /* line 52, ../sass/_generalCSS.scss */
+  .row {
+    padding: 10px 0 20px 0 !important;
+  }
+}
+/* line 56, ../sass/_generalCSS.scss */
+.column, .columns {
+  margin: 0 !important;
+  padding: 5px !important;
+}
+@media (max-width: 640px) {
+  /* line 56, ../sass/_generalCSS.scss */
+  .column, .columns {
+    padding: 3px 5px 3px 5px !important;
+  }
+}
+
+/*White Class for Testing Template Background Color*/
+/* line 63, ../sass/_generalCSS.scss */
+.white {
+  background: #ffffff !important;
+}
+/* line 65, ../sass/_generalCSS.scss */
+.white .prospectiveStudent {
+  background-color: #ffffff;
+}
+
+/* line 69, ../sass/_generalCSS.scss */
+#main.white .row {
+  background-color: #ffffff;
+}
+
+/* line 72, ../sass/_generalCSS.scss */
+header {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+/**** HEADER CHANGES ****/
+/** General **/
+/* line 4, ../sass/_header.scss */
+.showTopMenuItem {
+  display: none;
+}
+
+@media (max-width: 939px) {
+  /* Item visible with mobile menu only */
+  /* line 8, ../sass/_header.scss */
+  .showTopMenuItem {
+    display: inherit;
+  }
+}
+/* line 12, ../sass/_header.scss */
+.ALT-2 {
+  background: center top repeat-x url("/application/themes/foundation-starter-site/images/template/color-gradient.png");
+}
+
+/* line 15, ../sass/_header.scss */
+.name a:not(.button):hover {
+  /* logo on mobile/tablet/desktop */
+  opacity: 1;
+}
+
+/* TOP-TOOLBAR */
+/* line 21, ../sass/_header.scss */
+.top-toolbar {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+/* TOP-TOOLBAR - Row 1 - logo and topGroup */
+/* line 3, ../sass/_toptoolbarRow1.scss */
+.top-toolbar .title-area {
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+  margin-top: -15px;
+}
+/* line 11, ../sass/_toptoolbarRow1.scss */
+.top-toolbar .name h1 {
+  margin-bottom: 0px !important;
+}
+/* line 17, ../sass/_toptoolbarRow1.scss */
+.top-toolbar #searchForm > input {
+  background: none repeat scroll 0 0 rgba(17, 17, 17, 0.2) !important;
+  -webkit-border-radius: 0;
+  -mox-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: #666666 !important;
+  font-size: 11px;
+  /* 8pt */
+  font-weight: 700;
+  height: 2em;
+  line-height: 2em;
+  margin-right: 0px;
+  margin-top: 0px !important;
+  text-transform: uppercase;
+  top: 0;
+}
+
+/* line 37, ../sass/_toptoolbarRow1.scss */
+.medium-fi {
+  font-size: 24px;
+  position: absolute;
+  right: 25px !important;
+}
+
+/* line 44, ../sass/_toptoolbarRow1.scss */
+.fi-magnifying-glass.medium-fi {
+  color: #ffffff;
+}
+
+/* line 47, ../sass/_toptoolbarRow1.scss */
+.search {
+  font-size: 13px !important;
+  line-height: 16px !important;
+}
+
+/* line 53, ../sass/_toptoolbarRow1.scss */
+.login a {
+  line-height: 20px !important;
+  padding: 0 10px !important;
+}
+
+/* line 57, ../sass/_toptoolbarRow1.scss */
+.topGroup, .topGroup li, .topGroup a {
+  color: #666666 !important;
+  font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  line-height: 16px !important;
+  text-transform: uppercase !important;
+}
+
+/* line 69, ../sass/_toptoolbarRow1.scss */
+.topGroup {
+  margin-left: 0px !important;
+}
+/* line 73, ../sass/_toptoolbarRow1.scss */
+.topGroup a {
+  padding: 3px 8px !important;
+}
+/* line 76, ../sass/_toptoolbarRow1.scss */
+.topGroup .darkIcon {
+  color: #666666;
+}
+
+/* TOP-TOOLBAR - Row 2 - audienceButtons */
+/* line 2, ../sass/_toptoolbarRow2.scss */
+#audButtonRow {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+/* line 7, ../sass/_toptoolbarRow2.scss */
+#audButtonRow .audienceButtons, #audButtonRow .audienceButtons li, #audButtonRow .audienceButtons a {
+  font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px !important;
+  text-transform: uppercase;
+}
+/* line 18, ../sass/_toptoolbarRow2.scss */
+#audButtonRow .audienceButtons {
+  margin-left: 0px !important;
+}
+/* line 22, ../sass/_toptoolbarRow2.scss */
+#audButtonRow .audienceButtons li {
+  border: 1px #00adef solid !important;
+}
+/* line 25, ../sass/_toptoolbarRow2.scss */
+#audButtonRow .audienceButtons .audText {
+  color: #00adef !important;
+  padding: 0 15px;
+  border: none;
+  border-bottom: 1px #666666 solid;
+  border-top: 1px #666666 solid;
+  color: #fff;
+  background-color: rgba(17, 17, 17, 0.5);
+  margin-right: 10px;
+}
+/* line 35, ../sass/_toptoolbarRow2.scss */
+#audButtonRow .audienceButtons a {
+  color: #00adef !important;
+}
+/* line 37, ../sass/_toptoolbarRow2.scss */
+#audButtonRow .audienceButtons a.current {
+  background-color: #00adef !important;
+  color: #ffffff !important;
+}
+
+/* TOP-NAV - Top-bar - mainNav and admButtons */
+/* Desktop */
+@media (min-width: 940px) {
+  /* line 4, ../sass/_topnavTopBar.scss */
+  .top-nav, .top-bar {
+    height: 35px;
+  }
+
+  /* line 7, ../sass/_topnavTopBar.scss */
+  #main .row {
+    padding-top: 0px !important;
+  }
+}
+@media (max-width: 640px) {
+  /* line 13, ../sass/_topnavTopBar.scss */
+  .top-nav {
+    background-color: #5a3358 !important;
+  }
+}
+@media (max-width: 939px) {
+  /* line 13, ../sass/_topnavTopBar.scss */
+  .top-nav {
+    height: 45px;
+  }
+}
+
+/* mobile/tablet logo area */
+/* line 26, ../sass/_topnavTopBar.scss */
+.row.logo-menu {
+  padding: 0 10px !important;
+}
+
+@media (max-width: 939px) {
+  /* line 32, ../sass/_topnavTopBar.scss */
+  .top-bar .title-area {
+    float: initial;
+    text-align: center;
+  }
+  /* line 38, ../sass/_topnavTopBar.scss */
+  .top-bar .toggle-topbar {
+    display: initial;
+  }
+}
+/* line 44, ../sass/_topnavTopBar.scss */
+.top-bar .name {
+  height: 35px !important;
+  margin: auto;
+  width: 150px;
+}
+/* line 49, ../sass/_topnavTopBar.scss */
+.top-bar .name h1 a {
+  display: initial !important;
+  width: initial !important;
+}
+
+/* line 58, ../sass/_topnavTopBar.scss */
+.name h1 a {
+  padding: 0px !important;
+}
+/* line 62, ../sass/_topnavTopBar.scss */
+.name img {
+  background-color: #5a3358;
+  padding: 5px 20px;
+}
+@media (max-width: 939px) {
+  /* line 62, ../sass/_topnavTopBar.scss */
+  .name img {
+    margin-top: -10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 641px) {
+  /* line 79, ../sass/_topnavTopBar.scss */
+  .top-bar .toggle-topbar.menu-icon a::after {
+    -webkit-box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black;
+    box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black;
+  }
+}
+/* mobile/tablet search */
+/* line 87, ../sass/_topnavTopBar.scss */
+#mainNav #searchForm input {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+/* line 101, ../sass/_topnavTopBar.scss */
+.admButtons .infoButton {
+  background-color: #7d999b !important;
+}
+/* line 106, ../sass/_topnavTopBar.scss */
+.admButtons .visitButton {
+  background-color: #007476 !important;
+}
+/* line 111, ../sass/_topnavTopBar.scss */
+.admButtons .applyButton {
+  background-color: #f47920 !important;
+}
+
+/* line 117, ../sass/_topnavTopBar.scss */
+.admButtons, .admButtons li, .admButtons a {
+  color: #ffffff !important;
+  font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  line-height: 16px !important;
+  text-transform: uppercase !important;
+}
+
+/* line 129, ../sass/_topnavTopBar.scss */
+.admButtons {
+  margin-right: 12px !important;
+}
+/* line 133, ../sass/_topnavTopBar.scss */
+.admButtons li {
+  margin-left: 10px;
+}
+
+/** END Specfic Rows **/
+/** Dropdowns and Main Navigation **/
+/* line 143, ../sass/_topnavTopBar.scss */
+.top-bar-section {
+  width: 100%;
+}
+/* line 145, ../sass/_topnavTopBar.scss */
+.top-bar-section ul {
+  margin: 10px 0 0 10px;
+}
+/* line 148, ../sass/_topnavTopBar.scss */
+.top-bar-section ul li a {
+  color: #666666;
+}
+/* line 151, ../sass/_topnavTopBar.scss */
+.top-bar-section ul li:hover > a, .top-bar-section ul li:hover > a:hover {
+  background: rgba(17, 17, 17, 0.5);
+}
+/* line 155, ../sass/_topnavTopBar.scss */
+.top-bar-section ul.dropdown l1 a, .top-bar-section ul#mainNav ul.dropdown li > a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* line 167, ../sass/_topnavTopBar.scss */
+.top-bar-section #mainNav li > a {
+  opacity: 1;
+}
+/* line 171, ../sass/_topnavTopBar.scss */
+.top-bar-section > ul > .divider {
+  height: 22px;
+  margin-bottom: 10px;
+  margin-top: -6px;
+}
+/* line 179, ../sass/_topnavTopBar.scss */
+.top-bar-section .dropdown li:hover {
+  background-color: rgba(122, 122, 122, 0.9);
+}
+/* line 186, ../sass/_topnavTopBar.scss */
+.top-bar-section ul.dropdown li:hover a, .top-bar-section ul#mainNav ul.dropdown li:hover > a {
+  background-color: transparent;
+}
+/* line 191, ../sass/_topnavTopBar.scss */
+.top-bar-section ul#mainNav li > a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+/* line 203, ../sass/_topnavTopBar.scss */
+.top-bar-section #mainNav li:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.button) {
+  background-color: transparent;
+  background-image: none;
+}
+/* line 210, ../sass/_topnavTopBar.scss */
+.top-bar-section #mainNav li:not(.has-form):hover a:not(.button), .top-bar-section #mainNav li:not(.has-form) a:not(.button):hover {
+  background-color: rgba(17, 17, 17, 0.5);
+  color: #ffffff !important;
+}
+/* line 216, ../sass/_topnavTopBar.scss */
+.top-bar-section .has-dropdown {
+  margin-left: -1px;
+  margin-top: -6px;
+}
+
+/* line 226, ../sass/_topnavTopBar.scss */
+.logo-menu .top-bar-section .has-dropdown > a:after {
+  border-color: rgba(204, 204, 204, 0.5) transparent transparent transparent !important;
+}
+@media only screen and (min-width: 940px) {
+  /* line 226, ../sass/_topnavTopBar.scss */
+  .logo-menu .top-bar-section .has-dropdown > a:after {
+    margin-top: 0px !important;
+    top: 12px !important;
+  }
+}
+
+/* Mobile Menu Tab-Bar */
+/* Classes to show/hide header bars around 940px breakpoint for off-canvas */
+@media (max-width: 939px) {
+  /* line 5, ../sass/_mobileMenuTabBar.scss */
+  .show-for-mobile-menu {
+    display: inherit !important;
+  }
+
+  /* line 8, ../sass/_mobileMenuTabBar.scss */
+  .hide-for-mobile-menu {
+    display: none !important;
+  }
+}
+@media (min-width: 940px) {
+  /* line 13, ../sass/_mobileMenuTabBar.scss */
+  .show-for-mobile-menu {
+    display: none !important;
+  }
+
+  /* line 16, ../sass/_mobileMenuTabBar.scss */
+  .hide-for-mobile-menu {
+    display: inherit !important;
+  }
+}
+/* Classes to style mobile/tablet header for off-canvas */
+@media (max-width: 939px) {
+  /* line 23, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar {
+    background-color: #5a3358;
+  }
+
+  /* line 26, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar .left-small {
+    border-right: none;
+  }
+  /* line 28, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar .left-small .left-off-canvas-toggle span {
+    box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white;
+  }
+
+  /* line 32, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar .middle.tab-bar-section {
+    overflow: hidden;
+  }
+
+  /* line 35, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar .title-area {
+    text-align: center;
+    margin-left: 0;
+  }
+  /* line 38, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar .title-area .name {
+    width: 120px;
+    margin: auto;
+  }
+  /* line 41, ../sass/_mobileMenuTabBar.scss */
+  .tab-bar .title-area .name img {
+    padding: 0;
+    margin: 0;
+  }
+}
+/* Classes to add admButtons for mobile/tablet menu */
+/* line 51, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons li {
+  float: left;
+  text-align: center;
+  margin-left: 0;
+}
+/* line 55, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons li a {
+  color: #ffffff;
+  font-family: "Helvetica Bold Oblique", "Helvetica Bold", Helvetica, Arial, sans-serif;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+}
+/* line 63, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons .infoButton {
+  width: 34%;
+}
+/* line 65, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons .infoButton a {
+  background-color: #7d999b;
+}
+/* line 69, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons .visitButton {
+  width: 33%;
+}
+/* line 71, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons .visitButton a {
+  background-color: #007476;
+}
+/* line 75, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons .applyButton {
+  width: 33%;
+}
+/* line 77, ../sass/_mobileMenuTabBar.scss */
+.show-for-mobile-menu .admButtons .applyButton a {
+  background-color: #f47920;
+}
+
+/* Classes to style mobile/tablet menu navigation buttons */
+/* line 86, ../sass/_mobileMenuTabBar.scss */
+ul.off-canvas-list li a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+/* line 93, ../sass/_mobileMenuTabBar.scss */
+ul.off-canvas-list li label {
+  text-shadow: none;
+  font-family: "Times New Roman", Times, serif;
+}
+/* line 98, ../sass/_mobileMenuTabBar.scss */
+ul.off-canvas-list li ul #filters li a {
+  font-size: 16px;
+  line-height: 18px;
+}
+/* line 104, ../sass/_mobileMenuTabBar.scss */
+ul.off-canvas-list li.has-submenu > a:after {
+  float: right;
+}
+
+/****  FOOTER CHANGES ****/
+/* line 2, ../sass/_footer.scss */
+.footer-social {
+  margin-bottom: 40px;
+  margin-top: 20px !important;
+}
+
+/* line 8, ../sass/_footer.scss */
+.social-button {
+  text-align: center;
+}
+@media (min-width: 940px) and (max-width: 1024px) {
+  /* line 8, ../sass/_footer.scss */
+  .social-button {
+    text-align: right;
+  }
+}
+/* line 15, ../sass/_footer.scss */
+.social-button a {
+  display: initial !important;
+  float: none !important;
+  opacity: initial !important;
+}
+
+/* line 21, ../sass/_footer.scss */
+.footer-copy {
+  margin-top: 0px !important;
+}
+@media (min-width: 1025px) {
+  /* line 21, ../sass/_footer.scss */
+  .footer-copy {
+    margin-top: 20px !important;
+  }
+}
+/* line 30, ../sass/_footer.scss */
+.footer-copy p {
+  color: #666666;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  text-align: center;
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* line 30, ../sass/_footer.scss */
+  .footer-copy p {
+    text-align: right;
+  }
+}
+
+/* line 47, ../sass/_footer.scss */
+.footer-text p {
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 0 !important;
+  line-height: 14px !important;
+}
+
+/* line 60, ../sass/_footer.scss */
+.footer-links, .footer-text, .footer-social, .footer-copy {
+  padding: 5px !important;
+}
+
+/* line 64, ../sass/_footer.scss */
+.footer-links ul {
+  margin-bottom: 0px !important;
+}
+/* line 68, ../sass/_footer.scss */
+.footer-links ul li, .footer-links ul li a {
+  color: #666666;
+  font-family: "Helvetica Oblique", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 5px;
+}
+/* line 82, ../sass/_footer.scss */
+.footer-links h2 {
+  border-bottom: none;
+  color: #ffffff;
+  font-family: "Helvetica Oblique", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0 auto 10px auto;
+  padding: 0 10px;
+  text-align: center;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+/* line 102, ../sass/_footer.scss */
+.footer-links .heading-one {
+  background-color: #5a3358;
+}
+/* line 107, ../sass/_footer.scss */
+.footer-links .special-one {
+  color: #5a3358;
+}
+/* line 111, ../sass/_footer.scss */
+.footer-links .heading-two {
+  background-color: #00adef;
+}
+/* line 116, ../sass/_footer.scss */
+.footer-links .special-two {
+  color: #00adef;
+}
+/* line 120, ../sass/_footer.scss */
+.footer-links .heading-three {
+  background-color: #f47920;
+}
+/* line 125, ../sass/_footer.scss */
+.footer-links .special-three {
+  color: #f47920;
+}
+
+/* line 130, ../sass/_footer.scss */
+.special-one, .special-two, .special-three {
+  font-weight: 700;
+}
+
+/* line 135, ../sass/_footer.scss */
+.footer-nav {
+  background-color: #f2f2f2 !important;
+}
+
 /*** Global properties ***/
 @font-face {
   font-family: 'JosefinSlabSemiBold';
@@ -11,22 +750,22 @@
   src: url("fonts/JosefinSlab-SemiBold-webfont.eot");
   src: url("fonts/JosefinSlab-SemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/JosefinSlab-SemiBold-webfont.woff") format("woff"), url("fonts/JosefinSlab-SemiBold-webfont.ttf") format("truetype"), url("fonts/JosefinSlab-SemiBold-webfont.svg#JosefinSlabSemiBold") format("svg");
 }
-/* line 23, ../sass/theme.scss */
+/* line 27, ../sass/theme.scss */
 body {
   background: url("/application/themes/foundation-starter-site/images/template/footer-bg.png") repeat scroll 0 0 transparent;
   font-size: 0.8em;
 }
 
-/* line 27, ../sass/theme.scss */
+/* line 31, ../sass/theme.scss */
 #main {
-  background: white;
+  background: #ffffff;
   /*@include css3((-webkit-, -khtml-, -moz-, -ms-, -o-, ''), box-shadow, 0 0 5px rgba(0, 0, 0, 0.5));*/
   margin: 0 auto;
   max-width: 1240px;
   padding: 0 0 20px 0;
 }
 
-/* line 34, ../sass/theme.scss */
+/* line 38, ../sass/theme.scss */
 h1 {
   font-size: 46px;
   font-weight: 700;
@@ -35,7 +774,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 47, ../sass/theme.scss */
+/* line 51, ../sass/theme.scss */
 h2 {
   color: #b06030;
   font-size: 20px;
@@ -44,21 +783,21 @@ h2 {
   text-transform: uppercase;
 }
 
-/* line 60, ../sass/theme.scss */
+/* line 64, ../sass/theme.scss */
 p {
   font-size: 13px;
   line-height: 23px;
   margin: 0 0 23px 0;
 }
 
-/* line 70, ../sass/theme.scss */
+/* line 74, ../sass/theme.scss */
 .foundation--homepage p {
   font-size: 15px;
   line-height: 23px;
   margin: 0 0 23px 0;
 }
 
-/* line 80, ../sass/theme.scss */
+/* line 84, ../sass/theme.scss */
 h3, h4, h5, h6 {
   color: #4b4b5f;
   font-weight: normal;
@@ -66,7 +805,7 @@ h3, h4, h5, h6 {
   margin: 0 0 15px;
 }
 
-/* line 90, ../sass/theme.scss */
+/* line 94, ../sass/theme.scss */
 h3 {
   color: #b06030;
   font-size: 16px;
@@ -74,34 +813,34 @@ h3 {
   margin: 0;
 }
 
-/* line 101, ../sass/theme.scss */
+/* line 105, ../sass/theme.scss */
 .foundation--homepage h3 {
   font-size: 20px;
   text-transform: uppersae;
 }
 
-/* line 109, ../sass/theme.scss */
+/* line 113, ../sass/theme.scss */
 h4 {
   font-size: 14px;
 }
 
-/* line 114, ../sass/theme.scss */
+/* line 118, ../sass/theme.scss */
 h5 {
   font-size: 13px;
 }
 
-/* line 119, ../sass/theme.scss */
+/* line 123, ../sass/theme.scss */
 h6 {
   font-size: 12px;
 }
 
-/* line 125, ../sass/theme.scss */
+/* line 129, ../sass/theme.scss */
 h1 strong {
   font-size: 60px;
   font-weight: normal;
   line-height: 1.2em;
 }
-/* line 134, ../sass/theme.scss */
+/* line 138, ../sass/theme.scss */
 h1 em {
   border-bottom: 1px solid #ededed;
   color: #23231c;
@@ -112,18 +851,18 @@ h1 em {
   padding-bottom: 15px;
 }
 
-/* line 152, ../sass/theme.scss */
+/* line 156, ../sass/theme.scss */
 strong, b, big {
   color: #191001;
 }
 
-/* line 155, ../sass/theme.scss */
+/* line 159, ../sass/theme.scss */
 a {
   color: #b06030;
   outline: none;
   text-decoration: none;
 }
-/* line 161, ../sass/theme.scss */
+/* line 165, ../sass/theme.scss */
 a:hover, a:focus {
   text-decoration: none;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
