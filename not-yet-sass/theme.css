@@ -1332,17 +1332,18 @@ table tr th, table tr td {
 #prospectusFieldLabel label{display:block;text-indent:-9999px;}
 
 /*** USER INFO MENU ***/
-
-#userInfo {position:fixed;z-index:9999;right:-300px;top:140px;background:#cfcfcf;padding:20px 16px 20px 18px;width:300px;font-size:11px;border-right:3px solid #cfcfcf;font-family:Tahoma, Geneva, sans-serif;color:#666666;-webkit-border-bottom-left-radius:6px;-moz-border-radius-bottomleft:6px;border-radius:0 0 0 6px;line-height:1.6em;}
-#userInfo span.trigger {display:block;position:absolute;left:-100px;top:0px;width:100px;height:50px;cursor:pointer;text-align:center;background:url(/application/themes/foundation-5/images/template/flyout-SD-2026.png) no-repeat 0 0;}
+/* Moved to widgets partial _flyout.scss */
+/*
+#userInfo {position:fixed;z-index:9999;right:-322px;top:50px;background:#3a3a3a;padding:20px 16px 20px 18px;width:285px;font-size:11px;border-right:3px solid #3a3a3a;font-family:Tahoma, Geneva, sans-serif;color:#dfdfdf;-webkit-border-bottom-left-radius:6px;-moz-border-radius-bottomleft:6px;border-radius:0 0 0 6px;line-height:1.6em;}
+#userInfo span.trigger {display:block;position:absolute;left:-81px;top:25px;margin-top:-25px;width:81px;height:50px;cursor:pointer;text-align:center;background:url(/application/themes/foundation-5/images/template/info-trigger.png) no-repeat 0 0;}
 #userInfo h2{color:#ddd;text-shadow:0.05em 0.05em 0.1em #0b2e3c;font-size:16px;font-weight:bold;margin:0 0 8px 0;}
-#userInfo a {display:block;text-align:center;margin:10px auto;background:#00adef;color:#fff;/*border:1px solid #fff;*/text-transform:uppercase;text-decoration:none;padding:5px 10px;/*border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;*/font-size:16px;line-height:18px;}
-#userInfo a:hover {opacity: 0.5;/*background:#f47920;*/}
-#userInfo p {line-height: normal;}
+#userInfo a {display:block;width:100px;text-align:center;margin:15px auto;background:#0089c1;color:#fff;border:1px solid #fff;text-decoration:none;padding:5px 10px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+#userInfo a:hover {background:#d54c20;}
 
 #userInfo table{width:100%;border-collapse:collapse;border:1px solid #555;background:#3A3A3A;margin-bottom:10px;}
 #userInfo table th, #userInfo table td{padding:5px 5px 5px 10px;width:50%;color:#ccc;text-align:left;background:#3A3A3A;border:1px solid #555;}
 #userInfo table th{font-weight:bold;}
+*/
 
 /*** EVENTS ***/
 
