@@ -1,8 +1,11 @@
-@import "variables";
-@import "isotope";
-@import "generalCSS";
-@import "header";
-@import "footer";
+/* THEME SASS FILE - OUT OF DATE */
+
+
+@import "theme/variables";
+@import "theme/isotope";
+@import "theme/generalCSS";
+@import "theme/header";
+@import "theme/footer";
 
 @import url(/application/themes/foundation-starter-site/css/prettyPhoto.css);
 @import url(/application/themes/foundation-starter-site/css/chosen.css);

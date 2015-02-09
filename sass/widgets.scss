@@ -1,18 +1,23 @@
-@import "variables";
-@import "generalWidgets";
-@import "bannerOverlays";
-@import "tileOverlays";
+@import "theme/variables";
 
-@import "widgetShapes";
-@import "landingTopTiles";
-@import "promotionsAll";
+@import "widgets/generalWidgets";
+@import "widgets/widgetShapes";
+@import "widgets/tileOverlays";
 
-@import "deptSearch";
-@import "counselorByGeolocation";
-@import "featuredNewsStory";
-/* @import "twitterWidgetHomepage"; */
-@import "statsBox";
-@import "recentNews";
-@import "todayDate";
-@import "instagram";
-/* @import "featuredDept"; */
+/*** WIDGET STYLES SPECIFIC TO HOME/LPs ***/
+
+@import "widgets/bannerOverlays";
+@import "widgets/landingTopTiles";
+
+/***** SPECIFIC WIDGET STYLING *****/
+
+@import "widgets/promotionsAll";
+@import "widgets/deptSearch";
+@import "widgets/counselorByGeolocation";
+@import "widgets/featuredNewsStory";
+/* @import "widgets/twitterWidgetHomepage"; */
+@import "widgets/statsBox";
+@import "widgets/recentNews";
+@import "widgets/todayDate";
+@import "widgets/instagram";
+/* @import "widgets/featuredDept"; */
