@@ -9,7 +9,9 @@
 	visibility: hidden;
 	width: 96%;
 	&.summary {
-		top: 10%;
+		top: 5px;
+		height: 96%;
+		width: auto;
 	}
 	h2 {
 		color: $grey-medium;
@@ -47,7 +49,7 @@
 			}
 			&#overlayNoImage {
 				padding: {
-					right: 10px;
+					top: 10px;
 				}
 				opacity: 1;
 			}

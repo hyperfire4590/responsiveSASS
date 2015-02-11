@@ -21,6 +21,7 @@
 	bottom: 0;
 	right: 0;
 	left: 0;
+	margin: 5px;
 }
 .recentNews h2 {
 	display: table-cell;
@@ -32,7 +33,7 @@
 	}
 	color: $grey-medium;
 	margin: 0px;
-	padding: 10px;
+	padding: 0px;
 	@include serifFontFamily;
 	font: {
 		style: italic;
